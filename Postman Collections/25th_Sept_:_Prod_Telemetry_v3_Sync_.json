@@ -1,0 +1,35 @@
+{
+  "variables": [],
+  "info": {
+    "name": "25th Sept : Prod Telemetry v3 Sync ",
+    "_postman_id": "6c7e9e26-61e6-b891-2640-13df37f8148e",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "e38290ba-721e-a544-2a2d-6a3f889b4231",
+      "name": "Prod Telemetry V3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": \"ekstep.telemetry\",\n    \"ver\": \"2.0\",\n    \"ets\": 1455031059061,\n    \"params\": {\n        \"did\": \"e97987fa-c056-411d-hfkf-c23496093ujd\",\n        \"key\": \"57c176ca-1977-4785-af9e-d59d37214b0b\",\n        \"msgid\": \"7x87bc51-afbg-4344-88bc-a2a90df5fd76\"\n    },\n    \"events\": [\n    \t{\n  \"@version\": \"1\",\n  \"did\": \"38e8baf2f7d2fa48fd73dac95dec23348992a907\",\n  \"edata\": {\n    \"eks\": {\n      \"age\": 0,\n      \"avatar\": \"ic_badge2\",\n      \"day\": -1,\n      \"gender\": \"\",\n      \"handle\": \"ProdTest5\",\n      \"is_group_user\": true,\n      \"language\": \"mr\",\n      \"loc\": \"\",\n      \"month\": -1,\n      \"standard\": -99,\n      \"uid\": \"6187280f-0206-46eb-be6a-41131729cc01\"\n    }\n  },\n  \"eid\": \"GE_CREATE_PROFILE\",\n  \"ets\": 1500531948317,\n  \"gdata\": {\n    \"id\": \"genie.android\",\n    \"ver\": \"6.3.2272qa\"\n  },\n  \"key\": \"afeaf25b-7057-4e36-b52a-0b0ac9a31b1a\",\n  \"mid\": \"6187280f-0206-46eb-be6a-41131729cc01\",\n  \"sid\": \"5e54af04-bb38-48d7-a5d3-d3d8a7da9ea3\",\n  \"etags\": {\n      \"partner\": [\"org.ekstep.partner.akshara\"]\n  },\n  \"ts\": \"2017-07-14T00:38:33.278+0000\",\n  \"uid\": \"6187280f-0206-46eb-be6a-41131729cc01\",\n  \"uuid\": \"c1e0e540-e1e7-4f31-8e33-2ac59f94ea8f18\",\n  \"ver\": \"1.0\",\n  \"channel\": \"non.ekstep\",\n  \"pdata\": {\n  \t\"id\": \"genie\",\n  \t\"ver\": \"6.5\"\n  }\n}\n    ]\n}"
+        },
+        "url": "{{host}}/data/v3/telemetry",
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}
