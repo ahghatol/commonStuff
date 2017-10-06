@@ -1,0 +1,1413 @@
+{
+  "variables": [],
+  "info": {
+    "name": "25Th Sept: Platform v3 APIs",
+    "_postman_id": "eded34e5-99db-0ca7-4416-48efc36ddae6",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "ec930f04-ccce-58a5-6d3e-fd07c10f540e",
+      "name": "Assessment Item APIs",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "cb411d52-3d27-f8d3-ad7c-b7bc8a824268",
+          "name": "create items - mcq",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n    \"assessment_item\": {\n      \"identifier\": \"test.q901.a\",\n      \"objectType\": \"AssessmentItem\",\n      \"metadata\": {\n        \"code\": \"test.q901\",\n        \"name\": \"MCQ Question 2\",\n        \"type\": \"mcq\",\n        \"num_answers\": 1,\n        \"template\": \"mcq_template_2\",\n        \"qlevel\": \"MEDIUM\",\n        \"owner\": \"username_1\",\n        \"title\": \"ˆ š¿¤Í°¦ µ¿¸Í¤À°Í£µ¨Í¨Á ¹¾—Â ¸Á¤Í¤³¤Æ¯¨Í¨Á ²Æ•Í• ®¾¡¿.  ¸Â•Í¤ ‰¤Í¤°µ¨Í¨Á †°¿¸¿°¿.\",\n        \"question\": \"µ¿¸Í¤À°Í£ = ___________ š¦° ¸Æ‚.®À.             \\n¸Á¤Í¤³¤Æ= __________ š¦° ¸Æ‚.®À.\",\n        \"model\": {\n          \"img\": {\n            \"type\": \"image\",\n            \"asset\": \"perimeter\"\n          },\n          \"img2\": {\n            \"type\": \"image\",\n            \"asset\": \"smallSquare\"\n          },\n          \"subtext\": \"(          = 1  š¦° ¸Æ‚.®À)\"\n        },\n        \"options\": [\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&10\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"14&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"16&8\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            },\n            \"score\": 1\n          }\n        ],\n        \"max_score\": 1,\n        \"partial_scoring\": false,\n        \"feedback\": \"\"\n      },\n      \"outRelations\": [\n        {\n          \"endNodeId\": \"Num:C1:SC1\",\n          \"relationType\": \"associatedTo\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": "{{host}}/assessment/v3/items/create",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "772acefa-6c34-ef49-e522-0270eb2a88b7",
+          "name": "create items - mtf",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n    \"assessment_item\": {\n      \"identifier\": \"test.mtf_mixed_21\",\n      \"objectType\": \"AssessmentItem\",\n      \"metadata\": {\n        \"code\": \"test.mtf_mixed_1\",\n        \"name\": \"MTF Question 1\",\n        \"type\": \"mtf\",\n        \"template_id\": \"mtf_template_3\",\n       \n       \n      \n       \n        \"lhs_options\": [\n          {\n            \"value\": {\"type\": \"image\", \"asset\": \"grey\"},\n            \"index\": 0\n          }\n        ],\n        \"rhs_options\": [\n          {\n            \"value\": {\"type\": \"text\", \"asset\": \">\"}\n          },\n          {\n            \"value\": {\"type\": \"text\", \"asset\": \"=\"}\n          },\n          {\n            \"value\": {\"type\": \"mixed\", \"text\": \"<\", \"image\": \"image1\", \"audio\": \"audio1\"},\n            \"answer\": 0\n          }\n        ],\n        \"max_score\": 6,\n        \"partial_scoring\": true\n      \n      }\n    }\n  }\n}"
+            },
+            "url": "{{host}}/assessment/v3/items/create",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "4c312dc5-9d9c-6d9f-bfae-0eec26243f93",
+          "name": "list items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"request\": {\n        \n    }\n}"
+            },
+            "url": "{{host}}/assessment/v3/items/list",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "5ce053ff-eb1f-986d-8d85-57154ff5713b",
+          "name": "read items",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "value": null
+                }
+              ]
+            },
+            "url": "{{host}}/assessment/v3/items/read/do_12356776",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "2131c7ce-37a5-3dde-58b3-1fef2b196387",
+          "name": "create items - ftb",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n    \"assessment_item\": {\n      \"identifier\": \"test.q902\",\n      \"objectType\": \"AssessmentItem\",\n      \"metadata\": {\n        \"identifier\": \"test.q902\",\n        \"name\": \"FTB Question 1\",\n        \"template\": \"ftb_template_1\",\n        \"type\": \"ftb\",\n        \"num_answers\": 1,\n        \"model\": {\n    },\n        \"answer\": {\n      \"ans1\" : {\"value\" : 5, \"score\": 1}\n    },\n        \"code\": \"aq1_set_1_2\",\n        \"qlevel\": \"MEDIUM\",\n        \"owner\": \"EkStep\",\n        \"used_for\": \"worksheet\",\n        \"max_score\": 1,\n        \"partial_scoring\": true\n      },\n      \"outRelations\": [\n          {\n              \"endNodeId\": \"Num:C1:SC1\",\n              \"relationType\": \"associatedTo\"\n              \n          }\n      ]\n    }\n  }\n}"
+            },
+            "url": "{{host}}/assessment/v3/items/create",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "28fcb51b-3ee0-7613-ff76-292fd27ad7c0",
+          "name": "search items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n    \"metadata\": {\n        \"filters\": [\n            {\"property\" : \"template_id\", \"operator\": \"=\", \"value\": \"domain_3490\"}\n        ]\n    },\n    \"sortOrder\": [\n        {\"sortField\": \"code\", \"sortOrder\": \"ASC\"}\n    ],\n    \"startPosition\": 0,\n    \"resultSize\": 10\n  }\n}"
+            },
+            "url": "{{host}}/assessment/v3/items/search",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "6e67d59d-d5d5-5a4a-42a0-79979b3696a7",
+          "name": "update items",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n    \"assessment_item\": {\n      \"identifier\": \"ek.n.ib.a.ssnc.bp1.4\",\n      \"objectType\": \"AssessmentItem\",\n      \"metadata\": {\n        \"type\": \"mcq\",\n        \"lastUpdatedBy\": \"csv-import\",\n        \"used_for\": \"worksheet\",\n        \"num_answers\": 1,\n        \"max_score\": 1,\n        \"partial_scoring\": false,\n        \"code\": \"ek.n.ib.a.ssnc.bp1.4\",\n        \"title\": \"acvv\",\n        \"question\": \"7 + 0  = ?\",\n        \"question_image\": \"q24body\",\n        \"question_count\": 15,\n        \"domain\": \"Numeracy\",\n        \"language\": [\n          \"Hindi\"\n        ],\n        \"gradeLevel\": [\n          \"Grade 1\"\n        ],\n        \"qlevel\": \"EASY\",\n        \"keywords\": [\n          \"addition\",\n          \"add\",\n          \"sum\"\n        ],\n        \"media\": [\n          {\n            \"id\": \"q24body\",\n            \"type\": \"image\",\n            \"asset_id\": \"do_20043488\",\n            \"src\": \"https://ekstep-public.s3-ap-southeast-1.amazonaws.com/content/q24body_1468995752684.png\"\n          },\n          {\n            \"id\": \"q24body\",\n            \"type\": \"image\",\n            \"asset_id\": \"do_20043488\",\n            \"src\": \"https://ekstep-public.s3-ap-southeast-1.amazonaws.com/content/q24body_1468995752684.png\"\n          }\n        ],\n        \"options\": [\n          {\n            \"value\": {\n              \"type\": \"mixed\",\n              \"text\": \"8\",\n              \"asset\": \"8\",\n              \"index\": 0\n            },\n            \"answer\": false\n          },\n          {\n            \"value\": {\n              \"type\": \"mixed\",\n              \"text\": \"7\",\n              \"image\": \"q2body\",\n              \"asset\": \"7\",\n              \"index\": 1\n            },\n            \"answer\": true\n          },\n          {\n            \"value\": {\n              \"type\": \"mixed\",\n              \"text\": \"1\",\n              \"asset\": \"1\",\n              \"index\": 2\n            },\n            \"answer\": false\n          },\n          {\n            \"value\": {\n              \"type\": \"mixed\",\n              \"text\": \"4\",\n              \"asset\": \"4\",\n              \"index\": 3\n            },\n            \"answer\": false\n          }\n        ],\n        \"template\": \"org.ekstep.mcq.t.ta\",\n        \"template_id\": \"domain_3490\",\n        \"model\": {\n          \"param1\": \"7\",\n          \"param2\": \"1\"\n        },\n        \"rownum\": 5,\n        \"portalOwner\": \"128\",\n        \"name\": \"acvv\"\n      }\n    }\n  }\n}"
+            },
+            "url": "{{host}}/assessment/v3/items/update/do_12334567",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "5418f0e0-d762-9a60-d081-07e68231593a",
+          "name": "retire items",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{host}}/assessment/v3/items/retire/do_12334567",
+            "description": ""
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "_postman_id": "2721ed4e-5647-bdcb-26f6-35eb77b22951",
+      "name": "Assessment ItemSets APIs",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "ad5d0342-a20e-76e9-fab3-cba083b82115",
+          "name": "create itemSet - with members",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n    \"assessment_item_set\": {\n      \"objectType\": \"ItemSet\",\n      \"metadata\": {\n        \"title\": \"Akshara Worksheet Grade 5 Item Set\",\n        \"type\": \"materialised\",\n        \"max_score\": 17,\n        \"total_items\": 17,\n        \"description\": \"Akshara Worksheet Grade 5 Item Set\",\n        \"code\": \"akshara.grade5.ws1.test\",\n        \"owner\": \"Ilimi\",\n        \"used_for\": \"assessment\",\n        \"memberIds\": [\n            \"G5Q1\", \"G5Q2\", \"G5Q3\", \"G5Q4\", \"G5Q5\",\n            \"G5Q6\", \"G5Q7\", \"G5Q8\", \"G5Q9\", \"G5Q10\",\n            \"G5Q11\", \"G5Q12\", \"G5Q13\", \"G5Q14\", \"G5Q15\", \"G5Q16\", \"G5Q17\"\n        ]\n      }\n    }\n  }\n}"
+            },
+            "url": "{{host}}/assessment/v3/itemsets/create",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "df596d64-966a-bba4-a1d9-14dd917db773",
+          "name": "update itemSet",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n    \"assessment_item_set\": {\n      \"objectType\": \"ItemSet\",\n      \"metadata\": {\n        \"title\": \"Testing ItemSet - MCQQ_650.\",\n        \"type\": \"materialised\",\n        \"description\": \"Testing of ItemSet Using AssessmentItems\",\n        \"code\": \"ItemSet_650\",\n        \"difficulty_level\": \"high\",\n        \"owner\": \"Ilimi\",\n        \"used_for\": \"assessment\",\n        \"max_score\": 3,\n        \"memberIds\": [\n            \"test.q901\", \"test.q902\", \"test.q903\"\n        ]\n      }\n    }\n  }\n}"
+            },
+            "url": "{{host}}/assessment/v3/itemsets/update/do_456789",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "15e26b09-79e3-8efc-79d0-5eb697b754b0",
+          "name": "get itemSet",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              },
+              {
+                "key": "",
+                "value": "",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n    \"assessment_item\": {\n      \"identifier\": \"test.q901.a\",\n      \"objectType\": \"AssessmentItem\",\n      \"metadata\": {\n        \"code\": \"test.q901\",\n        \"name\": \"MCQ Question 2\",\n        \"type\": \"mcq\",\n        \"num_answers\": 1,\n        \"template\": \"mcq_template_2\",\n        \"qlevel\": \"MEDIUM\",\n        \"owner\": \"username_1\",\n        \"title\": \"ˆ š¿¤Í°¦ µ¿¸Í¤À°Í£µ¨Í¨Á ¹¾—Â ¸Á¤Í¤³¤Æ¯¨Í¨Á ²Æ•Í• ®¾¡¿.  ¸Â•Í¤ ‰¤Í¤°µ¨Í¨Á †°¿¸¿°¿.\",\n        \"question\": \"µ¿¸Í¤À°Í£ = ___________ š¦° ¸Æ‚.®À.             \\n¸Á¤Í¤³¤Æ= __________ š¦° ¸Æ‚.®À.\",\n        \"model\": {\n          \"img\": {\n            \"type\": \"image\",\n            \"asset\": \"perimeter\"\n          },\n          \"img2\": {\n            \"type\": \"image\",\n            \"asset\": \"smallSquare\"\n          },\n          \"subtext\": \"(          = 1  š¦° ¸Æ‚.®À)\"\n        },\n        \"options\": [\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&10\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"14&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"16&8\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            },\n            \"score\": 1\n          }\n        ],\n        \"max_score\": 1,\n        \"partial_scoring\": false,\n        \"feedback\": \"\"\n      },\n      \"outRelations\": [\n        {\n          \"endNodeId\": \"Num:C1:SC1\",\n          \"relationType\": \"associatedTo\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": "{{host}}/assessment/v3/itemsets/read/do_7896456",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "09541fb5-2057-b81b-867f-b7382f10cb48",
+          "name": "search - itemSets",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n    \"metadata\": {\n        \"filters\": [\n            {\"property\" : \"total_items\", \"operator\": \">=\", \"value\": 17}\n        ],\n        \"op\": \"AND\"\n    }\n  }\n}"
+            },
+            "url": "{{host}}/assessment/v3/itemsets/search",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "31b92a6f-a360-7eec-3e5a-89977a090bb8",
+          "name": "generate itemsets",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n    \"assessment_item\": {\n      \"identifier\": \"test.q901.a\",\n      \"objectType\": \"AssessmentItem\",\n      \"metadata\": {\n        \"code\": \"test.q901\",\n        \"name\": \"MCQ Question 2\",\n        \"type\": \"mcq\",\n        \"num_answers\": 1,\n        \"template\": \"mcq_template_2\",\n        \"qlevel\": \"MEDIUM\",\n        \"owner\": \"username_1\",\n        \"title\": \"ˆ š¿¤Í°¦ µ¿¸Í¤À°Í£µ¨Í¨Á ¹¾—Â ¸Á¤Í¤³¤Æ¯¨Í¨Á ²Æ•Í• ®¾¡¿.  ¸Â•Í¤ ‰¤Í¤°µ¨Í¨Á †°¿¸¿°¿.\",\n        \"question\": \"µ¿¸Í¤À°Í£ = ___________ š¦° ¸Æ‚.®À.             \\n¸Á¤Í¤³¤Æ= __________ š¦° ¸Æ‚.®À.\",\n        \"model\": {\n          \"img\": {\n            \"type\": \"image\",\n            \"asset\": \"perimeter\"\n          },\n          \"img2\": {\n            \"type\": \"image\",\n            \"asset\": \"smallSquare\"\n          },\n          \"subtext\": \"(          = 1  š¦° ¸Æ‚.®À)\"\n        },\n        \"options\": [\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&10\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"14&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"16&8\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            },\n            \"score\": 1\n          }\n        ],\n        \"max_score\": 1,\n        \"partial_scoring\": false,\n        \"feedback\": \"\"\n      },\n      \"outRelations\": [\n        {\n          \"endNodeId\": \"Num:C1:SC1\",\n          \"relationType\": \"associatedTo\"\n        }\n      ]\n    }\n  }\n}"
+            },
+            "url": "{{host}}/assessment/v3/itemsets/generate",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "56bd0bc2-3139-bfba-4b76-e5731e2c3e08",
+          "name": "retire itemset",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{host}}/assessment/v3/itemsets/retire/do_568798089",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "b4c889e4-c9b4-0947-9e00-e68dca0d9f03",
+          "name": "list itemset",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"request\": {\n        \n    }\n}"
+            },
+            "url": "{{host}}/assessment/v3/itemsets/list",
+            "description": ""
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "_postman_id": "07bcc626-8a74-6c5b-9731-7add628e4ed1",
+      "name": "Config APIs",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "c66fbace-cf1b-92fe-d61e-5d544d002fad",
+          "name": "Get All Resource Bundles",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"request\": {\n        \n    }\n}"
+            },
+            "url": "{{host}}/meta/v3/resourcebundles/list",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "8da8dfad-914e-010d-2990-3c2a617b9567",
+          "name": "Get All Resource Bundle ",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"request\": {\n        \n    }\n}"
+            },
+            "url": "{{host}}/meta/v3/resourcebundles/read/en",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "5c2a1f25-9941-a87f-4abb-6cb54855706e",
+          "name": "Get Ordinals",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"request\": {\n        \n    }\n}"
+            },
+            "url": "{{host}}/meta/v3/ordinals/list",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "7aa34743-1287-f39d-a08e-14093e0a69cf",
+          "name": "List Terms",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "value": null
+                }
+              ]
+            },
+            "url": "{{host}}/terms/v3/list",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "d97a1dc4-f4f2-4232-4ca3-c59939799929",
+          "name": "Defination list",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "value": null
+                }
+              ]
+            },
+            "url": "{{host}}/meta/v3/definitions/list",
+            "description": ""
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "_postman_id": "1eeba0a9-471f-3585-70b7-875b2a1ce545",
+      "name": "Content APIs",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "6d70d898-bf6b-bd90-0889-5505e87fb7f5",
+          "name": "Content - List",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "mahesh"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": { \n      \"search\": {\n        \"sort\": [\"contentType\"],\n        \"order\": \"asc\",\n        \"status\":\"Live\"\n      }\n  }\n}"
+            },
+            "url": "{{host}}/content/v3/list",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "ef9a1b74-c5c3-5357-cfca-9bb9b8a87307",
+          "name": "Content - Get",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "rayuluv"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "value": null
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{host}}/content/v3/read/do_212344942347632640143?fields=domain",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "content",
+                "v3",
+                "read",
+                "do_212344942347632640143"
+              ],
+              "query": [
+                {
+                  "key": "fields",
+                  "value": "domain",
+                  "equals": true
+                }
+              ]
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "77138544-fbfa-c615-2058-2c4facd86100",
+          "name": "Content - Create",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n    \"content\": {\n      \"code\": \"do_21233654011378073616\",\n      \"description\": \"Test Content\",\n      \"language\": [\n        \"English\"\n      ],\n      \"mimeType\": \"application/vnd.ekstep.ecml-archive\",\n      \"visibility\": \"Default\",\n      \"mediaType\": \"content\",\n      \"osId\": \"org.ekstep.quiz.app\",\n      \"domain\": [\n        \"literacy\"\n      ],\n      \"name\": \"testContent\"\n    }  \n  }\n}"
+            },
+            "url": "{{host}}/content/v3/create",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "2897f71b-9ac4-5c33-ba7e-af81e2bc0510",
+          "name": "Content - Search",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "mahesh"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": { \n      \"search\": {\n          \"identifier\": [\"next\", \"previous\", \"icon_hint\", \"speech_bubble\", \"image5\", \"domain_5230\", \"image7\", \n          \"domain_5239\", \"image9\", \"image10\", \"image11\", \"domain_5236\", \"image13\", \"domain_5237\", \"image15\", \"image16\", \n          \"domain_5238\"],\n          \"fields\": [\"name\", \"downloadUrl\", \"code\", \"mediaType\"],\n          \"limit\": 100\n      }\n  }\n}"
+            },
+            "url": "{{host}}/content/v3/search",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "4f2eac80-34c8-8d65-6deb-a3e0c87d80cb",
+          "name": "Content - Update",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n    \"content\": {\n     \n       \"versionKey\": \"1492770715596\",\n       \"code\":\"testImage\"\n    }\n  }\n}"
+            },
+            "url": "{{host}}/content/v3/update/do_11222877668517478412",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "194335e4-86eb-49cd-e934-80a5a50ee368",
+          "name": "Content - Upload",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "user-id",
+                "value": "mahesh"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "value": null,
+                  "type": "file"
+                }
+              ]
+            },
+            "url": "{{host}}/content/v3/upload/org.ekstep.esl1",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "3ecb92ef-8df8-f8fc-0b56-a774aef69fc5",
+          "name": "Content - Publish",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "rayuluv"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"request\": {\n\t\t\"content\" : {\n\t\t\t\"lastPublishedBy\" : \"Ekstep\"\n\t\t}\n\t}\n}"
+            },
+            "url": "{{host}}/content/v3/publish/org.ekstep.march1211332.story",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "df857643-6048-2f79-967b-57e9a5844ee7",
+          "name": "Content - Bundle",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n    \"content_identifiers\": [\"org.ekstep.english.stories\",\"org.ekstep.num.build.sentence\",\"org.ekstep.englishsecondlanguage\"],\n    \"file_name\": \"esl_dev_bundle\"\n  }\n}"
+            },
+            "url": "{{host}}/content/v3//bundle",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "dd8ddb45-5299-9011-a407-8ca473986201",
+          "name": "Content - Hierarchy",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {},
+            "url": "{{host}}/content/v3/hierarchy/org.ekstep.num.build.sentence",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "22038c66-412f-02d2-b42b-2d402311c3c1",
+          "name": "Content - Retire",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "mahesh"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{host}}/content/v3/retire/do_2122308014473707521145",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "493c1264-531e-eff3-a347-d485dc116fc5",
+          "name": "Content - Review",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "rayuluv"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"request\": {\n\t\t\"content\" : {\n\t\t\n\t\t}\n\t}\n}"
+            },
+            "url": "{{host}}/content/v3/review/org.ekstep.march1211332.story",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "89cff097-d0cb-7b6a-3cfd-84aa8dd3c729",
+          "name": "Content - Adv - Search",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "mahesh"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": { \n      \"search\": {\n          \"identifier\": [\"next\", \"previous\", \"icon_hint\", \"speech_bubble\", \"image5\", \"domain_5230\", \"image7\", \n          \"domain_5239\", \"image9\", \"image10\", \"image11\", \"domain_5236\", \"image13\", \"domain_5237\", \"image15\", \"image16\", \n          \"domain_5238\"],\n          \"fields\": [\"name\", \"downloadUrl\", \"code\", \"mediaType\"],\n          \"limit\": 100\n      }\n  }\n}"
+            },
+            "url": "{{host}}/content/v3/adv/search",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "b9dd6657-f684-20df-5da4-1d839a0dc7b4",
+          "name": "Content - Flag",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n  \t\t\"flagReasons\":[\"Copyright Violation\"],\n  \t\t\"flaggedBy\":\"rayulu\",\n    \t\"versionKey\": \"1480076527423\"\n  }\n}"
+            },
+            "url": "{{host}}/content/v3/flag/do_1234567",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "1fcc852e-d683-22ed-0ada-4f48c3eccd37",
+          "name": "get AuditLogs By ObjectID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "user-id",
+                "value": "rayuluv"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "{{host}}/v2/audit/history/test/test_word1479358481466_1?start=2016-05-26T13:00:00",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "v2",
+                "audit",
+                "history",
+                "test",
+                "test_word1479358481466_1"
+              ],
+              "query": [
+                {
+                  "key": "start",
+                  "value": "2016-05-26T13:00:00"
+                }
+              ]
+            },
+            "description": ""
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "_postman_id": "6d3b506d-7ae3-f5aa-2cda-25421ab3752a",
+      "name": "Domain APIs",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "f0a2e866-0207-08f2-048b-f830c5df4419",
+          "name": "Get Domains",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "value": null
+                }
+              ]
+            },
+            "url": "{{host}}/domain/v3/list",
+            "description": ""
+          },
+          "response": [
+            {
+              "id": "0243e737-7349-76fe-4f04-dc8621f05648",
+              "name": "Get Domains",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "file",
+                      "type": "file",
+                      "value": null
+                    }
+                  ]
+                },
+                "url": "{{host}}/domains/v3/list"
+              },
+              "status": "Category not found",
+              "code": 404,
+              "_postman_previewlanguage": "html",
+              "_postman_previewtype": "text",
+              "header": [
+                {
+                  "name": "Cache-Control",
+                  "key": "Cache-Control",
+                  "value": "no-cache, no-transform",
+                  "description": ""
+                },
+                {
+                  "name": "Connection",
+                  "key": "Connection",
+                  "value": "keep-alive",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Encoding",
+                  "key": "Content-Encoding",
+                  "value": "gzip",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Length",
+                  "key": "Content-Length",
+                  "value": "1452",
+                  "description": ""
+                },
+                {
+                  "name": "Content-Type",
+                  "key": "Content-Type",
+                  "value": "text/html; charset=UTF-8",
+                  "description": ""
+                },
+                {
+                  "name": "Date",
+                  "key": "Date",
+                  "value": "Thu, 21 Sep 2017 14:35:54 GMT",
+                  "description": ""
+                },
+                {
+                  "name": "Pragma",
+                  "key": "Pragma",
+                  "value": "no-cache",
+                  "description": ""
+                },
+                {
+                  "name": "Server",
+                  "key": "Server",
+                  "value": "nginx/1.4.6 (Ubuntu)",
+                  "description": ""
+                },
+                {
+                  "name": "Vary",
+                  "key": "Vary",
+                  "value": "Accept-Encoding",
+                  "description": ""
+                },
+                {
+                  "name": "X-Content-Type-Options",
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff",
+                  "description": ""
+                },
+                {
+                  "name": "X-Frame-Options",
+                  "key": "X-Frame-Options",
+                  "value": "SAMEORIGIN",
+                  "description": ""
+                },
+                {
+                  "name": "X-Powered-By",
+                  "key": "X-Powered-By",
+                  "value": "PHP/7.0.14-2+deb.sury.org~trusty+1",
+                  "description": ""
+                },
+                {
+                  "name": "X-XSS-Protection",
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block",
+                  "description": ""
+                }
+              ],
+              "cookie": [],
+              "responseTime": "197",
+              "body": "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-gb\" lang=\"en-gb\" dir=\"ltr\">\r\n<head>\r\n\t<title>404 - Error: 404</title>\r\n\t<meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\" />\r\n\t<link rel=\"stylesheet\" href=\"/templates/ja_social_ii/css/error.css\" type=\"text/css\" />\r\n\t<link rel=\"stylesheet\" href=\"/templates/ja_social_ii/fonts/font-awesome/css/font-awesome.min.css\" type=\"text/css\" />\r\n\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n\t<!--<link href='http://fonts.googleapis.com/css?family=Roboto:400,900,300,700' rel='stylesheet' type='text/css'> -->\r\n\t<link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>\r\n\r\n\t<!-- For Freshdesk popup modal -->\r\n\t<!-- Latest compiled and minified CSS -->\r\n\t<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\r\n\r\n\t<!-- jQuery library -->\r\n\t<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\r\n\r\n\t<!-- Latest compiled JavaScript -->\r\n\t<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\r\n</head>\r\n\r\n<body class=\"page-error\">\r\n\t<div class=\"main\">\r\n\t\t<div class=\"error\">\r\n\t\t\t<div id=\"outline\">\r\n\t\t\t\t<div id=\"errorboxoutline\">\r\n\t\t\t\t\t<div class=\"error-code\">\r\n\t\t\t\t\t\t<div class=\"error_404\">\r\n\t\t\t\t\t\t\t\t\t<span class=\"firstline_word\">P<i class=\"fa fa-exclamation-triangle\" aria-hidden=\"true\"></i>GE</span>\r\n\t\t\t\t\t\t\t\t\t<span class=\"secondline_word\">Not found</span>\r\n\t\t\t\t\t\t\t\t\t<img src=\"/templates/ja_social_ii/images/error_page_img.png\" style=\"max-width:100%\"/>\r\n\t\t\t\t\t\t\t\t\t<div id=\"errorboxbody\"><p>Whoops! We couldn't find page you were looking for<br>but you can go back to homepage.</p><a class=\"button-home\" href=\"/\" title=\"Go to the Home Page\">Home Page</a></div>\r\n\t\t\t\t\t\t\t\t</div> \r\n\t\t\t\t\t\t<!--Freshdesk help form modal-->\r\n\t\t\t\t\t\t<div id=\"helpModal\" class=\"modal fade\">\r\n\t\t\t\t\t\t\t<div class=\"modal-dialog\">\r\n\t\t\t\t\t\t\t\t<div class=\"modal-content\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"modal-header\">\r\n\t\t\t\t\t\t\t\t\t\t<h5 class=\"modal-title pull-left\">Help & Support</h5>\r\n\t\t\t\t\t\t\t\t\t\t<button type=\"button\" class=\"close pull-right\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"modal-body height380\">\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t\t<iframe title=\"Feedback Form\" class=\"freshwidget-embedded-form\" id=\"freshwidget-embedded-form\" src=\"https://ekdev.freshdesk.com/widgets/feedback_widget/new?widgetType=embedded&submitTitle=Send&screenshot=no&helpdesk_ticket[custom_field][page_url_597483]=https%3A%2F%2Fqa.ekstep.in%2Fapi%2Fdomains%2Fv3%2Flist&helpdesk_ticket[custom_field][page_title_597483]=Error%3A+404&disable[custom_field][page_url_597483]&disable[custom_field][page_title_597483]&submitThanks=Thank+you+for+getting+in+touch.+Your+help+request+has+been+logged%2C+and+our+team+will+follow+up+with+you.\" scrolling=\"yes\" height=\"480px\" width=\"100%\" frameborder=\"0\" >\r\n\t\t\t\t\t\t\t\t\t\t</iframe>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\r\n\t\t\t\t\t<a href=\"#helpModal\" class=\"freshwidget-theme\" data-toggle=\"modal\" style=\"color: rgb(0, 147, 221); background-color: rgb(255, 255, 255); border-color: rgb(0, 147, 221);\">Help</a>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</body>\r\n</html>\r\n"
+            }
+          ]
+        },
+        {
+          "_postman_id": "dfbde246-9ba1-236e-7815-60c593af69d1",
+          "name": "Get Domain",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "rayuluv"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {},
+            "url": "{{host}}/domain/v3/numeracy/read",
+            "description": ""
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "_postman_id": "db64bd33-7a45-9bb3-fa8d-616b62e80a7d",
+      "name": "Domain Objects",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "1ecbcf7f-eb0a-f361-5a57-de576c3c26f3",
+          "name": "Get Domain Objects",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "rayuluv"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "value": null
+                }
+              ]
+            },
+            "url": "{{host}}/domain/v3/numeracy/concepts/list",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "823b3250-a234-f82f-aad1-d015560446f7",
+          "name": "Get Domain Object",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "rayulu"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "value": null
+                }
+              ]
+            },
+            "url": "{{host}}/domain/v3/numeracy/concepts/read/Num:C3:SC2",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "907539b8-44ce-f465-b453-70e698703f2f",
+          "name": "Create Domain Object",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n    \"object\": {\n        \"identifier\": \"test_dimension_19\",\n        \"name\": \"Test Dimension 1\",\n        \"code\": \"test_dimension_1\",\n        \"parent\": [\n        ]\n    }\n  }\n}"
+            },
+            "url": "{{host}}/domain/v3/numeracy/dimensions/create",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "2a2277fe-0ebb-975d-7c03-44eed4622112",
+          "name": "Update Domian Object",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n    \"object\": {\n        \"tags\": [\"Class 4\"]\n        \n    }\n  }\n}"
+            },
+            "url": "{{host}}/domain/v3/numeracy/concepts/update/Num:C3:SC7:MC5",
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "6d8878e5-ae88-4fb2-1a80-78edcb202904",
+          "name": "List Terms",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "rayulu"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "value": null
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{host}}/domain/v3/terms/list?language=mr",
+              "host": [
+                "{{host}}"
+              ],
+              "path": [
+                "domain",
+                "v3",
+                "terms",
+                "list"
+              ],
+              "query": [
+                {
+                  "key": "language",
+                  "value": "mr",
+                  "equals": true
+                }
+              ]
+            },
+            "description": ""
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "1062f98b-403b-0001-581a-f72c5524b178",
+          "name": "Retire Concept",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "user-id",
+                "value": "ilimi"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"request\": {\n   \n      \n    \n  }\n}"
+            },
+            "url": "{{host}}/domain/v3/numeracy/concepts/retire/Num:C3:SC2",
+            "description": ""
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
