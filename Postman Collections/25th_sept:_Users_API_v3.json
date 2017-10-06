@@ -1,0 +1,134 @@
+{
+  "variables": [],
+  "info": {
+    "name": "25th sept: Users API v3",
+    "_postman_id": "d702101a-4253-3618-e08f-a65367718650",
+    "description": "Default api for authentication and other required process",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "b2d53a79-6731-cd24-19db-368a32696e1f",
+      "name": "Config api",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "hash_key",
+              "value": "fasdfasdfasdf sdfasd",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{host}}/index.php?option=com_api&app=users&resource=config&format=raw",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "index.php"
+          ],
+          "query": [
+            {
+              "key": "option",
+              "value": "com_api"
+            },
+            {
+              "key": "app",
+              "value": "users"
+            },
+            {
+              "key": "resource",
+              "value": "config"
+            },
+            {
+              "key": "format",
+              "value": "raw"
+            }
+          ]
+        },
+        "description": "Get configuration of components for app"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "d93090eb-c2ba-afca-fa5e-78c0a76192e6",
+      "name": "Login api",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "username",
+              "value": "harry",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "abcd1234",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{host}}/index.php?option=com_api&app=users&resource=login&format=raw",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "index.php"
+          ],
+          "query": [
+            {
+              "key": "option",
+              "value": "com_api"
+            },
+            {
+              "key": "app",
+              "value": "users"
+            },
+            {
+              "key": "resource",
+              "value": "login"
+            },
+            {
+              "key": "format",
+              "value": "raw"
+            }
+          ]
+        },
+        "description": "Get user auth key from site\n\n"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "224ebff0-0c5c-3c65-721f-695d42e45ecf",
+      "name": "{{host}}/users/v3/search",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"request\": {\n\t\t\"search\": \"\",\n\t\t\"filters\": {\n           \"block\" : [0, 1],\n           \"id\": [],\n           \"email\":[\"amol_g@techjoomla.com\"],\n           \"username\":[]\n\t\t},\n\t\t\"sort_by\": {\n\t\t\t\"name\": \"asc\"\n\t\t},\n\t\t\"offset\": 0,\n\t\t\"limit\": 10\n\t}\n}"
+        },
+        "url": "{{host}}/users/v3/search",
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}
