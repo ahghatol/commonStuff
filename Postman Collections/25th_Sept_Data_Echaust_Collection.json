@@ -1,0 +1,138 @@
+{
+  "variables": [],
+  "info": {
+    "name": "25th Sept Data Echaust Collection",
+    "_postman_id": "66083ddc-d89a-3f30-8237-0f04af8b73db",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "da659545-3dbb-d16b-4ef5-24e30143e6f0",
+      "name": "Get Job List",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
+              "",
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"Analytics Platform - Healthy\"] = jsonData.result.healthy === true;",
+              "",
+              "tests[\"Status code is 200\"] = responseCode.code === 200;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": \"ekstep.analytics.recommendations\",\n    \"ver\": \"1.0\",\n    \"ts\": \"2016-05-19T09:23:44.212+00:00\",\n    \"request\": {\n        \"context\": {\n            \"did\": \"5edf49c4-313c-4f57-fd52-9bfe35e3b9v7\",\n            \"dlang\": \"en\"\n        }\n    }\n}"
+        },
+        "url": {
+          "raw": "{{host}}/data/v2/dataset/request/list/fd001eaba2e5b79b814446307d709ee2097fbd51?limit=150",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "data",
+            "v2",
+            "dataset",
+            "request",
+            "list",
+            "fd001eaba2e5b79b814446307d709ee2097fbd51"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "150"
+            }
+          ]
+        },
+        "description": "Get Job List"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "9c332fef-1dab-8eaa-d135-8a05e5b41150",
+      "name": "Get Job Info",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
+              "",
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"Analytics Platform - Healthy\"] = jsonData.result.healthy === true;",
+              "",
+              "tests[\"Status code is 200\"] = responseCode.code === 200;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": \"ekstep.analytics.recommendations\",\n    \"ver\": \"1.0\",\n    \"ts\": \"2016-05-19T09:23:44.212+00:00\",\n    \"request\": {\n        \"context\": {\n            \"did\": \"5edf49c4-313c-4f57-fd52-9bfe35e3b9v7\",\n            \"dlang\": \"en\"\n        }\n    }\n}"
+        },
+        "url": "{{host}}/data/v2/dataset/request/read/fd001eaba2e5b79b814446307d709ee2097fbd51/FDDA2CF4A0D4529F0A25ECA4E126E40E",
+        "description": "Get Job Info"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "db785d18-ccb1-73aa-675c-b15aed1b7464",
+      "name": "Data Exhaust - Request API",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
+              "",
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"Response code is OK\"] = jsonData.responseCode === \"OK\";",
+              "",
+              "tests[\"Status code is 200\"] = responseCode.code === 200;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\": \"ekstep.analytics.dataset.request.submit\",\n    \"ver\": \"1.0\",\n    \"ts\": \"2016-12-07T12:40:40+05:30\",\n    \"params\": {\n        \"msgid\": \"4f04da60-1e24-4d31-aa7b-1daf91c46341\",\n        \"client_key\": \"fd001eaba2e5b79b814446307d709ee2097fbd51\"\n    },\n    \"request\": {\n        \"filter\": {\n        \"tags\": [\n          \"b5e9c9ab4f777c191bc847e1aca222d6836714b7\"\n        ],\n        \"start_date\": \"2017-02-02\",\n        \"end_date\": \"2017-02-03\",\n        \"events\": [\n          \"OE_ASSESS\",\n          \"OE_LEVEL_SET\"\n        ]\n      },\n      \"output_format\": \"json\"\n    }\n}"
+        },
+        "url": "{{host}}/data/v2/dataset/request/submit",
+        "description": "Data Exhaust - Request API"
+      },
+      "response": []
+    }
+  ]
+}
