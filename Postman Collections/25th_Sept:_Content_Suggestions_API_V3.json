@@ -1,0 +1,163 @@
+{
+  "variables": [],
+  "info": {
+    "name": "25th Sept: Content Suggestions API V3",
+    "_postman_id": "a5bdfcf0-489b-3e8d-da28-f45a69af4b2c",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "619a41e1-7814-429d-5985-43a6101fc6f5",
+      "name": "createSuggestions",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI1OWFiMmE2MDc1YzI0ODU2YjhiYjIzMjg4ZDdhZGNmNSJ9.RLouNX7RQ0VkVv2BYqNtH12D0IzKnBJ_I46xEORwHsU"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"request\": {\n        \"content\":{\n          \"objectId\":\"do_11231238873495961616\",\n          \"objectType\":\"content\",\n          \"suggestedBy\":\"340\",\n          \"command\":\"update\",\n          \"params\":{\n            \"gradeLevel\":[\"Grade 9\"],\n            \"ageGroup\":[\"8-10\"]\n          },\n          \"comment\": \"Check this suggestion properly\"\n        }\n    } \n}"
+        },
+        "url": "{{host}}/content/v3/suggestions/create",
+        "description": "creates suggestions for a given content identifier"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "648c46cb-5f63-b8bd-3dd2-850177845c05",
+      "name": "get Suggestions By ObjectId",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "user-id",
+            "value": "{{user-id}}"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {},
+        "url": {
+          "raw": "{{host}}/content/v3/suggestions/read/do_11231238873495961616?status=new",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "content",
+            "v3",
+            "suggestions",
+            "read",
+            "do_11231238873495961616"
+          ],
+          "query": [
+            {
+              "key": "status",
+              "value": "new",
+              "equals": true
+            }
+          ]
+        },
+        "description": "Fetch suggestions for a given content identifier"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "9e131574-fab1-d76a-5fb6-a55e7e52c9dc",
+      "name": "reject suggestion",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI1OWFiMmE2MDc1YzI0ODU2YjhiYjIzMjg4ZDdhZGNmNSJ9.RLouNX7RQ0VkVv2BYqNtH12D0IzKnBJ_I46xEORwHsU"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\"request\":{\n   \"content\":{\n      \"status\":\"reject\",\n      \"comments\":[\"suggestion not applicable\"]\n   }\n }\n}"
+        },
+        "url": "{{host}}/content/v3/suggestions/reject/sg_11230244449260339211",
+        "description": "rejectes selection if its irrelevent"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "f973c870-0f5a-4e51-4020-1d0ed71730d1",
+      "name": "Approve Suggestion",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI1OWFiMmE2MDc1YzI0ODU2YjhiYjIzMjg4ZDdhZGNmNSJ9.RLouNX7RQ0VkVv2BYqNtH12D0IzKnBJ_I46xEORwHsU"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\"request\":{\n   \"content\":{\n      \"status\":\"approve\",\n      \"comments\":[\"suggestion applicable\"]\n   }\n }\n}"
+        },
+        "url": "{{host}}/content/v3/suggestions/approve/sg_112301089400397824189",
+        "description": "approves suggestion if its relevent/applicable"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "ff694aaf-699c-d1d8-409a-1d79df0f823b",
+      "name": "lists suggestions",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "rashmi"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI1OWFiMmE2MDc1YzI0ODU2YjhiYjIzMjg4ZDdhZGNmNSJ9.RLouNX7RQ0VkVv2BYqNtH12D0IzKnBJ_I46xEORwHsU"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"request\": {\n        \"content\": {\n            \"suggestedBy\": \"\",\n            \"suggestion_id\": \"\",\n            \"status\": \"\"\n        }\n    }\n}"
+        },
+        "url": "{{host}}/content/v3/suggestions/list",
+        "description": "lists suggestions based on search criteria"
+      },
+      "response": []
+    }
+  ]
+}
