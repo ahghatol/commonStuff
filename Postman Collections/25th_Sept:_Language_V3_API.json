@@ -1,0 +1,1336 @@
+{
+  "variables": [],
+  "info": {
+    "name": "25th Sept: Language V3 API",
+    "_postman_id": "bc4a5b9f-0c1f-c887-1757-088d41027d36",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "c80558de-1a6b-b46d-5c1a-e0cf4c48b4c9",
+      "name": "v3 - varnas list",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"request\": {\r\n    \t\"fields\":[\"idealScreenSize\"],\r\n        \"limit\":2,\r\n        \"offset\":1\r\n    }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/varnas/list?language_id=ka",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "varnas",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "ka",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "586e35de-f1b8-3be1-832e-023dc84d1fb3",
+      "name": "v3 - words list",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"request\": {\r\n    \t\"fields\":[\"idealScreenSize\"],\r\n        \"limit\":2,\r\n        \"offset\":1\r\n    }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/words/list?language_id=ka",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "words",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "ka",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "e0c3f58a-7b21-31bb-a23a-9e9a6ecdd5b8",
+      "name": "v3 - synsets list",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"request\": {\r\n    \t\"fields\":[\"idealScreenSize\"],\r\n        \"limit\":2,\r\n        \"offset\":1\r\n    }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/synsets/list?language_id=ka",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "synsets",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "ka",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "fa50a0cb-de17-e41e-75fd-1f787606633c",
+      "name": "v3 - wordlists list",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"request\": {\r\n    \t\"fields\":[\"idealScreenSize\"],\r\n        \"limit\":2,\r\n        \"offset\":1\r\n    }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/list?language_id=ka",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "ka",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "438b4286-4c29-01eb-29ee-18cb34c3049c",
+      "name": "v3 - traversals list",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"request\": {\r\n    \t\"fields\":[\"idealScreenSize\"],\r\n        \"limit\":2,\r\n        \"offset\":1\r\n    }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/traversals/list?language_id=ka",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "traversals",
+            "list"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "ka",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "233aff3c-1d78-bfc8-200b-fb7d468636c4",
+      "name": "v3 - words create",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"request\": {\r\n    \"words\": [\r\n      {\r\n        \"lemma\": \"s1\",\r\n        \"primaryMeaning\": {\r\n            \"identifier\":\"en:s:1\",\r\n          \"gloss\": \"ss1\",\r\n          \"category\": \"Action\\/Event\",\r\n          \"exampleSentences\":[\"es11\",\"es12\"],\r\n          \"synonyms\":[{\"lemma\":\"s2\"}]\r\n        },\r\n        \"status\":\"Draft\"\r\n      }\r\n    ]\r\n  }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/words/create?language_id=en",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "words",
+            "create"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "en",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "ddb8adc3-38c9-8c2c-5287-8692d5707b25",
+      "name": "v3 - synsets create",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"request\": {\r\n    \"synset\": \r\n      {\r\n        \"identifier\": \"ka_s_716\",\r\n        \"lemma\": \"•Ë¤¿\",\r\n        \"difficultyLevel\": \"Easy\",\r\n        \"Antonyms\":[{\r\n            \"identifier\": \"ka_s_713\"\r\n        }]\r\n      }\r\n  }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/synsets/create?language_id=ka",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "synsets",
+            "create"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "ka",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "458f35ba-050f-553a-7c50-61d2966f189b",
+      "name": "v3 - varnas create",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"request\": {\r\n    \"varna\": \r\n      {\r\n        \"lemma\":\"\",\r\n        \"unicode\": \"0917\",\r\n        \"type\":\"VowelSign\",\r\n        \"isoSymbol\":\"i\",\r\n        \"orthoAttribVector\":[0, 0, 0, 1, 0, 1, 0],\r\n        \"modifierOrthoAttribVector\":[0, 0, 0, 1, 0, 1, 0]\r\n      }\r\n  }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/varnas/create?language_id=hi",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "varnas",
+            "create"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "hi",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "bd47db61-fdc0-c4da-777b-2f02dfbb5148",
+      "name": "v3 - wordlists create",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"request\": {\n    \"words\": [\"house\", \"boat\"],\n    \"metadata\": {\n        \"name\": \"test_word_list_2\"\n    }\n  }\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/wordlists/create?language_id=en",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "wordlists",
+            "create"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "en",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "91005fb3-38ce-d6d8-7070-2b3bd4493942",
+      "name": "v3 - traversals create",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"request\": {\r\n      \"rule\":\r\n      {\r\n        \"identifier\": \"groupByFirstLetter\",\r\n        \"maxWords\": 1000,\r\n        \"index\": \"0\",\r\n        \"description\": \"Group By First Letter\",\r\n        \"minChainLength\": 3,\r\n        \"type\": \"AksharaBoundary\",\r\n        \"ruleObjectType\": \"Word\",\r\n        \"startWordsSize\": 500,\r\n        \"maxChainLength\": 50,\r\n        \"name\": \"Group By First Letter\",\r\n        \"ruleId\": \"groupByFirstLetter\",\r\n        \"ruleScript\": \"getWordChainsByIndex\",\r\n        \"status\": \"Live\"\r\n      }\r\n    \r\n  }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/traversals/create?language_id=en",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "traversals",
+            "create"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "en",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "bc86da51-28ab-778a-247c-b62b1283f868",
+      "name": "v3 - traversals get",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"request\": {\r\n    \t\"fields\":[\"idealScreenSize\"],\r\n        \"limit\":2,\r\n        \"offset\":1\r\n    }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/traversals/read/rule_1?language_id=en",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "traversals",
+            "read",
+            "rule_1"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "en",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "755e2564-8942-10a5-6aa9-0f3250d4b746",
+      "name": "v3 - wordlists get",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"request\": {\r\n    \t\"fields\":[\"idealScreenSize\"],\r\n        \"limit\":2,\r\n        \"offset\":1\r\n    }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/wordlists/read/en_207486?language_id=en",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "wordlists",
+            "read",
+            "en_207486"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "en",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "339fb763-ecbd-99a9-7dbf-6c58c0683a7e",
+      "name": "v3 - varnas get",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"request\": {\r\n    \t\"fields\":[\"idealScreenSize\"],\r\n        \"limit\":2,\r\n        \"offset\":1\r\n    }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/varnas/read/–?language_id=ka",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "varnas",
+            "read",
+            "–"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "ka",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "8f51f9d7-4bcf-71ae-819f-4b982ef959ca",
+      "name": "v3 - synsets get",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"request\": {\r\n    \t\"fields\":[\"idealScreenSize\"],\r\n        \"limit\":2,\r\n        \"offset\":1\r\n    }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/synsets/read/ka_s_717?language_id=ka",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "synsets",
+            "read",
+            "ka_s_717"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "ka",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "429ef5c5-8af9-109b-aad6-f085e6254411",
+      "name": "v3 - words get",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"request\": {\r\n    \t\"fields\":[\"idealScreenSize\"],\r\n        \"limit\":2,\r\n        \"offset\":1\r\n    }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/words/read/ka_10453?language_id=ka",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "words",
+            "read",
+            "ka_10453"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "ka",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "cb138441-d1cc-120a-b604-52ae4cd7e521",
+      "name": "v3 - words update",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"request\": {\r\n    \"word\": \r\n      {\r\n      \"primaryMeaning\": {\r\n        \"identifier\": \"ka:S:00000244\",\r\n        \"synonyms\": [\r\n          {\r\n            \"name\": \"¬Æ¦°¿¸ÁµÁ¦Á\"\r\n          },\r\n          {\r\n            \"name\": \"§®•¿_¹¾•ÁµÁ¦Á\"\r\n          }\r\n        ]\r\n      }\r\n      }\r\n  }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/words/update/ka_10453?language_id=ka",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "words",
+            "update",
+            "ka_10453"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "ka",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "249f490c-b53b-1572-94d8-0ab68727bfb4",
+      "name": "v3 - synsets update",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"request\": {\r\n    \"synset\": \r\n      {\r\n        \"gloss\": \"Hi\",\r\n        \"difficultyLevel\": \"Easy\",\r\n        \"Antonyms\":[{\r\n            \"identifier\": \"ka_s_713\"\r\n        }]\r\n      }\r\n  }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/synsets/update/ka_s_717?language_id=ka",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "synsets",
+            "update",
+            "ka_s_717"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "ka",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "1dfd177b-c11a-1ba1-1a4e-a91ee620d046",
+      "name": "v3 - varnas update",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"request\": {\r\n    \"varna\": \r\n      {\r\n        \"unicode\": \"0914\"\r\n      }\r\n  }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/varnas/update/?language_id=ka",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "varnas",
+            "update",
+            ""
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "ka",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "a31639e6-f1b2-9669-999c-d26949600123",
+      "name": "v3 - wordlists update",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"request\": {\n    \"words\": [\"house\", \"boat\", \"bird\"],\n    \"metadata\": {\n        \"name\": \"test_word_list_1\",\n        \"description\": \"Test word list for api testing\"\n    }\n  }\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/wordlists/update/en_207486?language_id=en",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "wordlists",
+            "update",
+            "en_207486"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "en",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "bea687f7-2a95-2f6e-80fb-1ae696507dc6",
+      "name": "v3 - traversals update",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"request\": {\r\n    \"rule\": \r\n        {\r\n        \"ruleId\":\"akshara_boundary\",\r\n        \"name\": \"Akshara rule\",\r\n        \"description\":\"Akshara rule\",\r\n        \"type\":\"AksharaBoundary\",\r\n        \"traverserClass\":\"org.ekstep.language.wordchain.traverser.AksharaTraverser\",\r\n        \"ruleObjectType\":\"Word\",\r\n        \"ruleObjectStatus\":[\"Live\", \"Draft\"],\r\n        \"minChainLength\":3,\r\n        \"maxChainLength\":5,\r\n        \"ruleScript\":\"getAksharaRuleWordChains\",\r\n        \"startWordsSize\":10,\r\n        \"wordChainWordsSize\":1000\r\n      }\r\n  }\r\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/traversals/update/akshara_boundary?language_id=en",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "traversals",
+            "update",
+            "akshara_boundary"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "en",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "2c409ecd-5642-480c-54e3-9f5cb8e268f3",
+      "name": "v3 - tools parser",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"request\": {\n    \"language_id\" : \"testparser\",\n    \"wordSuggestions\": true,\n    \"relatedWords\": true,\n    \"translations\": true,\n    \"equivalentWords\": true,\n    \"limit\": 1,\n    \"content\": \"wordOne\"\n  }\n}"
+        },
+        "url": "{{host}}/language/v3/tools/parser",
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "e16323d6-27f6-7990-a6de-88d5376e0ae9",
+      "name": "v3 - tools translate",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"request\": {\n  }\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/tools/translate?language_id=ka&lemma=…œ¾¤&languages=ta,en",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "tools",
+            "translate"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "ka",
+              "equals": true
+            },
+            {
+              "key": "lemma",
+              "value": "…œ¾¤",
+              "equals": true
+            },
+            {
+              "key": "languages",
+              "value": "ta,en",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "b95a7268-cbae-383d-103f-448b7a324057",
+      "name": "v3 - tools transliterate",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"request\": {\n  }\n}"
+        },
+        "url": {
+          "raw": "{{host}}/language/v3/tools/transliterate?language_id=hi,ta,ka&addClosingVirama=true&text=Angle",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "language",
+            "v3",
+            "tools",
+            "transliterate"
+          ],
+          "query": [
+            {
+              "key": "language_id",
+              "value": "hi,ta,ka",
+              "equals": true
+            },
+            {
+              "key": "addClosingVirama",
+              "value": "true",
+              "equals": true
+            },
+            {
+              "key": "text",
+              "value": "Angle",
+              "equals": true
+            }
+          ]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "31c711d9-0ef0-1009-5dfa-c1d5a160cc93",
+      "name": "v3 - tools complexity",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"request\": {\n    \"language_id\": \"hi\",\n    \"words\": [\"0>>\", \"A$M$>\", \"?!?/>\", \".K>\", \"&A,2>\", \"B.(>\", \"->>\", \"&G@\", \"*!<\", \"K*@\", \"*B\"]\n  }\n}"
+        },
+        "url": "{{host}}/language/v3/tools/complexity",
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "da7d2612-83d8-c149-27a3-cf371e89cde0",
+      "name": "v3 - tools text analysis",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "user-id",
+            "value": "ilimi"
+          },
+          {
+            "key": "Accept-Encoding",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Accept-Charset",
+            "value": "UTF-8"
+          },
+          {
+            "key": "Authorization",
+            "value": "{{jwtToken}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"request\": {\n    \"language_id\": \"hi\",\n    \"text\": \"2 &GGG  0G @> .AG 9>%@ *@> >9G 8G? >( 8Gd $B 59> M/K /> %>? G2(Gd $AG G2(G -G> %> ? 9>%@ K  G2(Gd 2 , 9>% .A9 'K 2G, >(> > 2G, 9>%@ K 2 &GGG '0 9@ ,A2> 2GGd ,MK 8G 0M> 0G- 9>%@ 0 @> L(8> G2 G2 09G 9KG? 0 9>%@ @ 2\> H8G 9A 9K@? 0 9>%@ 8>.(G  /> $K @> 	88G M/> ,>$G 0G>? 9>%@ 5 @G > .AL> 2>0 ,>$@$ 0Kd 8A(G 0 ,K2G (2@ >( (% (@2> @2 %( 9>%@ %*M%* %>( %0.8 9>%@, >(, 9>% 6,M& @ *9>( 0> 9>%@ >( 9>% 6,M&K K ?$M0K 8G .?2> >( 9>% 9>% 9>%@ 9>%@ >( *9>( 0> 9>%@ 9>% >( *9>(K 0 G0> 2> 8A(G, ,K2G 0 (M$0 *9>(K 2 @2 9>% 9>%@ *9>(K 0 G0> 2> (X2 8+2 .92 *2 (2 (% 8*G0> %>( .@( ( 9 >2> 9 >0> 0G2>  @ .>$M0> 5>2G 6,M&K *0 G0> 2> @2 @2 >2 (@2 2@2@ 9@2 @( @> > 2@ *]K 2 >2 @2 2 >2 @2 9 9> 9@  > >@ 0 0> 0@ %2 %>2 %>2@ (0 (>0 (>0@ (% (>% ($M%@ 2?K (2 (>2@ (>2> (( >2> 0 9@0> %>2@ >0@ 290@ >( >2> @2 >2@ %>2 (@ 5> (?>2K *G8?2 +G0K 0 0 -0Kd\"\n  }\n}"
+        },
+        "url": "{{host}}/language/v3/tools/text/analysis",
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}
