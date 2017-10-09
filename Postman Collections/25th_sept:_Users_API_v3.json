@@ -11,6 +11,7 @@
       "_postman_id": "b2d53a79-6731-cd24-19db-368a32696e1f",
       "name": "Config api",
       "request": {
+        "url": "{{host}}/index.php?option=com_api&app=users&resource=config&format=raw",
         "method": "GET",
         "header": [],
         "body": {
@@ -23,33 +24,6 @@
             }
           ]
         },
-        "url": {
-          "raw": "{{host}}/index.php?option=com_api&app=users&resource=config&format=raw",
-          "host": [
-            "{{host}}"
-          ],
-          "path": [
-            "index.php"
-          ],
-          "query": [
-            {
-              "key": "option",
-              "value": "com_api"
-            },
-            {
-              "key": "app",
-              "value": "users"
-            },
-            {
-              "key": "resource",
-              "value": "config"
-            },
-            {
-              "key": "format",
-              "value": "raw"
-            }
-          ]
-        },
         "description": "Get configuration of components for app"
       },
       "response": []
@@ -58,6 +32,7 @@
       "_postman_id": "d93090eb-c2ba-afca-fa5e-78c0a76192e6",
       "name": "Login api",
       "request": {
+        "url": "{{host}}/index.php?option=com_api&app=users&resource=login&format=raw",
         "method": "POST",
         "header": [],
         "body": {
@@ -75,33 +50,6 @@
             }
           ]
         },
-        "url": {
-          "raw": "{{host}}/index.php?option=com_api&app=users&resource=login&format=raw",
-          "host": [
-            "{{host}}"
-          ],
-          "path": [
-            "index.php"
-          ],
-          "query": [
-            {
-              "key": "option",
-              "value": "com_api"
-            },
-            {
-              "key": "app",
-              "value": "users"
-            },
-            {
-              "key": "resource",
-              "value": "login"
-            },
-            {
-              "key": "format",
-              "value": "raw"
-            }
-          ]
-        },
         "description": "Get user auth key from site\n\n"
       },
       "response": []
@@ -110,22 +58,24 @@
       "_postman_id": "224ebff0-0c5c-3c65-721f-695d42e45ecf",
       "name": "{{host}}/users/v3/search",
       "request": {
+        "url": "{{host}}/users/v3/search",
         "method": "POST",
         "header": [
           {
             "key": "Content-Type",
-            "value": "application/json"
+            "value": "application/json",
+            "description": ""
           },
           {
             "key": "Authorization",
-            "value": "{{jwtToken}}"
+            "value": "{{jwtToken}}",
+            "description": ""
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\n\t\"request\": {\n\t\t\"search\": \"\",\n\t\t\"filters\": {\n           \"block\" : [0, 1],\n           \"id\": [],\n           \"email\":[\"amol_g@techjoomla.com\"],\n           \"username\":[]\n\t\t},\n\t\t\"sort_by\": {\n\t\t\t\"name\": \"asc\"\n\t\t},\n\t\t\"offset\": 0,\n\t\t\"limit\": 10\n\t}\n}"
         },
-        "url": "{{host}}/users/v3/search",
         "description": ""
       },
       "response": []
