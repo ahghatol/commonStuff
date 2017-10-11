@@ -56,7 +56,7 @@
     },
     {
       "_postman_id": "224ebff0-0c5c-3c65-721f-695d42e45ecf",
-      "name": "{{host}}/users/v3/search",
+      "name": "Joomla user API",
       "request": {
         "url": "{{host}}/users/v3/search",
         "method": "POST",
