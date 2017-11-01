@@ -93,11 +93,12 @@
           "raw": "{\r\n    \"request\": {\r\n    \t\"fields\":[\"idealScreenSize\"],\r\n        \"limit\":2,\r\n        \"offset\":1\r\n    }\r\n}"
         },
         "url": {
-          "raw": "{{host}}language/v3/words/list?language_id=ka",
+          "raw": "{{host}}/language/v3/words/list?language_id=ka",
           "host": [
-            "{{host}}language"
+            "{{host}}"
           ],
           "path": [
+            "language",
             "v3",
             "words",
             "list"
