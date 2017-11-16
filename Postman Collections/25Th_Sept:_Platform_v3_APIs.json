@@ -1084,7 +1084,6 @@
               "status": "Category not found",
               "code": 404,
               "_postman_previewlanguage": "html",
-              "_postman_previewtype": "text",
               "header": [
                 {
                   "name": "Cache-Control",
