@@ -1,1 +1,1 @@
-This is repo for your awsome ideas
+This is free repository for your awesome ideas!
