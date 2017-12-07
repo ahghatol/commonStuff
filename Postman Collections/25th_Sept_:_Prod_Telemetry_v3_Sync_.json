@@ -32,7 +32,7 @@
     },
     {
       "_postman_id": "5ab8218f-5e90-6ff5-4e5f-babe98c4ae3e",
-      "name": "{{host}}/v1/telemetry",
+      "name": "telemetry QA",
       "request": {
         "method": "POST",
         "header": [
