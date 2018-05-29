@@ -1,9 +1,7 @@
 {
-  "variables": [],
   "info": {
-    "name": "25th sept Analytics - Metrics APIs - Data API",
     "_postman_id": "8f0bbf1a-6086-5227-1150-66faa02fca86",
-    "description": "",
+    "name": "25th sept Analytics - Metrics APIs - Data API",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
@@ -124,46 +122,6 @@
         },
         "url": "{{host}}/data/v3/metrics/genie-launch",
         "description": "Genie Usage Metrics"
-      },
-      "response": []
-    },
-    {
-      "_postman_id": "d722bd8c-f557-6987-8581-c0761b6e1237",
-      "name": "Metrics - Content List",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "type": "text/javascript",
-            "exec": [
-              "tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
-              "",
-              "var jsonData = JSON.parse(responseBody);",
-              "tests[\"Response code is OK\"] = jsonData.responseCode === \"OK\";",
-              "",
-              "tests[\"Status code is 200\"] = responseCode.code === 200;"
-            ]
-          }
-        }
-      ],
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          },
-          {
-            "key": "Authorization",
-            "value": "{{jwtToken}}"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"id\": \"ekstep.analytics.content-list\",\n    \"ver\": \"1.0\",\n    \"ts\": \"2016-09-12T18:43:23.890+00:00\",\n    \"params\": {\n        \"msgid\": \"4f04da60-1e24-4d31-aa7b-1daf91c46341\"\n    },\n    \"request\": {\n        \"period\": \"LAST_7_DAYS\",\n        \"tag\": \"4f04da60-1e24-4d31-aa7b-1daf91c46341\"\n    }\n}"
-        },
-        "url": "{{host}}/data/v3/metrics/list/content",
-        "description": "Content List Metrics"
       },
       "response": []
     },
