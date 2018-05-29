@@ -893,7 +893,7 @@
               "mode": "raw",
               "raw": "{\n\t\"request\": {\n\t\t\"content\" : {\n\t\t\n\t\t}\n\t}\n}"
             },
-            "url": "{{host}}/content/v3/review/org.ekstep.march1211332.story"
+            "url": "{{host}}/content/v3/review/do_112513928772542464121"
           },
           "response": []
         },
