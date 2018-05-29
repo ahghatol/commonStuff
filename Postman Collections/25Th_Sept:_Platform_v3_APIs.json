@@ -1,9 +1,7 @@
 {
-  "variables": [],
   "info": {
-    "name": "25Th Sept: Platform v3 APIs",
     "_postman_id": "eded34e5-99db-0ca7-4416-48efc36ddae6",
-    "description": "",
+    "name": "25Th Sept: Platform v3 APIs",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
@@ -33,10 +31,9 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"request\": {\n    \"assessment_item\": {\n      \"identifier\": \"test.q901.a\",\n      \"objectType\": \"AssessmentItem\",\n      \"metadata\": {\n        \"code\": \"test.q901\",\n        \"name\": \"MCQ Question 2\",\n        \"type\": \"mcq\",\n        \"num_answers\": 1,\n        \"template\": \"mcq_template_2\",\n        \"qlevel\": \"MEDIUM\",\n        \"owner\": \"username_1\",\n        \"title\": \"ˆ š¿¤Í°¦ µ¿¸Í¤À°Í£µ¨Í¨Á ¹¾—Â ¸Á¤Í¤³¤Æ¯¨Í¨Á ²Æ•Í• ®¾¡¿.  ¸Â•Í¤ ‰¤Í¤°µ¨Í¨Á †°¿¸¿°¿.\",\n        \"question\": \"µ¿¸Í¤À°Í£ = ___________ š¦° ¸Æ‚.®À.             \\n¸Á¤Í¤³¤Æ= __________ š¦° ¸Æ‚.®À.\",\n        \"model\": {\n          \"img\": {\n            \"type\": \"image\",\n            \"asset\": \"perimeter\"\n          },\n          \"img2\": {\n            \"type\": \"image\",\n            \"asset\": \"smallSquare\"\n          },\n          \"subtext\": \"(          = 1  š¦° ¸Æ‚.®À)\"\n        },\n        \"options\": [\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&10\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"14&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"16&8\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            },\n            \"score\": 1\n          }\n        ],\n        \"max_score\": 1,\n        \"partial_scoring\": false,\n        \"feedback\": \"\"\n      },\n      \"outRelations\": [\n        {\n          \"endNodeId\": \"Num:C1:SC1\",\n          \"relationType\": \"associatedTo\"\n        }\n      ]\n    }\n  }\n}"
+              "raw": "{\n  \"request\": {\n    \"assessment_item\": {\n      \"identifier\": \"test.q901.a\",\n      \"objectType\": \"AssessmentItem\",\n      \"metadata\": {\n        \"code\": \"test.q901\",\n        \"name\": \"MCQ Question 2\",\n        \"type\": \"mcq\",\n        \"num_answers\": 1,\n        \"template\": \"mcq_template_2\",\n        \"qlevel\": \"MEDIUM\",\n        \"owner\": \"username_1\",\n        \"title\": \"\u0c88 \u0c9a\u0cbf\u0ca4\u0ccd\u0cb0\u0ca6 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0cbe\u0c97\u0cc2 \u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0cb3\u0ca4\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb2\u0cc6\u0c95\u0ccd\u0c95 \u0cae\u0cbe\u0ca1\u0cbf.  \u0cb8\u0cc2\u0c95\u0ccd\u0ca4 \u0c89\u0ca4\u0ccd\u0ca4\u0cb0\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0cb0\u0cbf\u0cb8\u0cbf\u0cb0\u0cbf.\",\n        \"question\": \"\u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3 = ___________ \u0c9a\u0ca6\u0cb0 \u0cb8\u0cc6\u0c82.\u0cae\u0cc0.             \\n\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0cb3\u0ca4\u0cc6= __________ \u0c9a\u0ca6\u0cb0 \u0cb8\u0cc6\u0c82.\u0cae\u0cc0.\",\n        \"model\": {\n          \"img\": {\n            \"type\": \"image\",\n            \"asset\": \"perimeter\"\n          },\n          \"img2\": {\n            \"type\": \"image\",\n            \"asset\": \"smallSquare\"\n          },\n          \"subtext\": \"(          = 1  \u0c9a\u0ca6\u0cb0 \u0cb8\u0cc6\u0c82.\u0cae\u0cc0)\"\n        },\n        \"options\": [\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&10\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"14&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"16&8\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            },\n            \"score\": 1\n          }\n        ],\n        \"max_score\": 1,\n        \"partial_scoring\": false,\n        \"feedback\": \"\"\n      },\n      \"outRelations\": [\n        {\n          \"endNodeId\": \"Num:C1:SC1\",\n          \"relationType\": \"associatedTo\"\n        }\n      ]\n    }\n  }\n}"
             },
-            "url": "{{host}}/assessment/v3/items/create",
-            "description": ""
+            "url": "{{host}}/assessment/v3/items/create"
           },
           "response": []
         },
@@ -63,8 +60,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": {\n    \"assessment_item\": {\n      \"identifier\": \"test.mtf_mixed_21\",\n      \"objectType\": \"AssessmentItem\",\n      \"metadata\": {\n        \"code\": \"test.mtf_mixed_1\",\n        \"name\": \"MTF Question 1\",\n        \"type\": \"mtf\",\n        \"template_id\": \"mtf_template_3\",\n       \n       \n      \n       \n        \"lhs_options\": [\n          {\n            \"value\": {\"type\": \"image\", \"asset\": \"grey\"},\n            \"index\": 0\n          }\n        ],\n        \"rhs_options\": [\n          {\n            \"value\": {\"type\": \"text\", \"asset\": \">\"}\n          },\n          {\n            \"value\": {\"type\": \"text\", \"asset\": \"=\"}\n          },\n          {\n            \"value\": {\"type\": \"mixed\", \"text\": \"<\", \"image\": \"image1\", \"audio\": \"audio1\"},\n            \"answer\": 0\n          }\n        ],\n        \"max_score\": 6,\n        \"partial_scoring\": true\n      \n      }\n    }\n  }\n}"
             },
-            "url": "{{host}}/assessment/v3/items/create",
-            "description": ""
+            "url": "{{host}}/assessment/v3/items/create"
           },
           "response": []
         },
@@ -91,8 +87,7 @@
               "mode": "raw",
               "raw": "{\n    \"request\": {\n        \n    }\n}"
             },
-            "url": "{{host}}/assessment/v3/items/list",
-            "description": ""
+            "url": "{{host}}/assessment/v3/items/list"
           },
           "response": []
         },
@@ -121,8 +116,7 @@
                 }
               ]
             },
-            "url": "{{host}}/assessment/v3/items/read/do_12356776",
-            "description": ""
+            "url": "{{host}}/assessment/v3/items/read/do_12356776"
           },
           "response": []
         },
@@ -149,8 +143,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": {\n    \"assessment_item\": {\n      \"identifier\": \"test.q902\",\n      \"objectType\": \"AssessmentItem\",\n      \"metadata\": {\n        \"identifier\": \"test.q902\",\n        \"name\": \"FTB Question 1\",\n        \"template\": \"ftb_template_1\",\n        \"type\": \"ftb\",\n        \"num_answers\": 1,\n        \"model\": {\n    },\n        \"answer\": {\n      \"ans1\" : {\"value\" : 5, \"score\": 1}\n    },\n        \"code\": \"aq1_set_1_2\",\n        \"qlevel\": \"MEDIUM\",\n        \"owner\": \"EkStep\",\n        \"used_for\": \"worksheet\",\n        \"max_score\": 1,\n        \"partial_scoring\": true\n      },\n      \"outRelations\": [\n          {\n              \"endNodeId\": \"Num:C1:SC1\",\n              \"relationType\": \"associatedTo\"\n              \n          }\n      ]\n    }\n  }\n}"
             },
-            "url": "{{host}}/assessment/v3/items/create",
-            "description": ""
+            "url": "{{host}}/assessment/v3/items/create"
           },
           "response": []
         },
@@ -177,8 +170,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": {\n    \"metadata\": {\n        \"filters\": [\n            {\"property\" : \"template_id\", \"operator\": \"=\", \"value\": \"domain_3490\"}\n        ]\n    },\n    \"sortOrder\": [\n        {\"sortField\": \"code\", \"sortOrder\": \"ASC\"}\n    ],\n    \"startPosition\": 0,\n    \"resultSize\": 10\n  }\n}"
             },
-            "url": "{{host}}/assessment/v3/items/search",
-            "description": ""
+            "url": "{{host}}/assessment/v3/items/search"
           },
           "response": []
         },
@@ -205,8 +197,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": {\n    \"assessment_item\": {\n      \"identifier\": \"ek.n.ib.a.ssnc.bp1.4\",\n      \"objectType\": \"AssessmentItem\",\n      \"metadata\": {\n        \"type\": \"mcq\",\n        \"lastUpdatedBy\": \"csv-import\",\n        \"used_for\": \"worksheet\",\n        \"num_answers\": 1,\n        \"max_score\": 1,\n        \"partial_scoring\": false,\n        \"code\": \"ek.n.ib.a.ssnc.bp1.4\",\n        \"title\": \"acvv\",\n        \"question\": \"7 + 0  = ?\",\n        \"question_image\": \"q24body\",\n        \"question_count\": 15,\n        \"domain\": \"Numeracy\",\n        \"language\": [\n          \"Hindi\"\n        ],\n        \"gradeLevel\": [\n          \"Grade 1\"\n        ],\n        \"qlevel\": \"EASY\",\n        \"keywords\": [\n          \"addition\",\n          \"add\",\n          \"sum\"\n        ],\n        \"media\": [\n          {\n            \"id\": \"q24body\",\n            \"type\": \"image\",\n            \"asset_id\": \"do_20043488\",\n            \"src\": \"https://ekstep-public.s3-ap-southeast-1.amazonaws.com/content/q24body_1468995752684.png\"\n          },\n          {\n            \"id\": \"q24body\",\n            \"type\": \"image\",\n            \"asset_id\": \"do_20043488\",\n            \"src\": \"https://ekstep-public.s3-ap-southeast-1.amazonaws.com/content/q24body_1468995752684.png\"\n          }\n        ],\n        \"options\": [\n          {\n            \"value\": {\n              \"type\": \"mixed\",\n              \"text\": \"8\",\n              \"asset\": \"8\",\n              \"index\": 0\n            },\n            \"answer\": false\n          },\n          {\n            \"value\": {\n              \"type\": \"mixed\",\n              \"text\": \"7\",\n              \"image\": \"q2body\",\n              \"asset\": \"7\",\n              \"index\": 1\n            },\n            \"answer\": true\n          },\n          {\n            \"value\": {\n              \"type\": \"mixed\",\n              \"text\": \"1\",\n              \"asset\": \"1\",\n              \"index\": 2\n            },\n            \"answer\": false\n          },\n          {\n            \"value\": {\n              \"type\": \"mixed\",\n              \"text\": \"4\",\n              \"asset\": \"4\",\n              \"index\": 3\n            },\n            \"answer\": false\n          }\n        ],\n        \"template\": \"org.ekstep.mcq.t.ta\",\n        \"template_id\": \"domain_3490\",\n        \"model\": {\n          \"param1\": \"7\",\n          \"param2\": \"1\"\n        },\n        \"rownum\": 5,\n        \"portalOwner\": \"128\",\n        \"name\": \"acvv\"\n      }\n    }\n  }\n}"
             },
-            "url": "{{host}}/assessment/v3/items/update/do_12334567",
-            "description": ""
+            "url": "{{host}}/assessment/v3/items/update/do_12334567"
           },
           "response": []
         },
@@ -233,8 +224,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "{{host}}/assessment/v3/items/retire/do_12334567",
-            "description": ""
+            "url": "{{host}}/assessment/v3/items/retire/do_12334567"
           },
           "response": []
         }
@@ -268,8 +258,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": {\n    \"assessment_item_set\": {\n      \"objectType\": \"ItemSet\",\n      \"metadata\": {\n        \"title\": \"Akshara Worksheet Grade 5 Item Set\",\n        \"type\": \"materialised\",\n        \"max_score\": 17,\n        \"total_items\": 17,\n        \"description\": \"Akshara Worksheet Grade 5 Item Set\",\n        \"code\": \"akshara.grade5.ws1.test\",\n        \"owner\": \"Ilimi\",\n        \"used_for\": \"assessment\",\n        \"memberIds\": [\n            \"G5Q1\", \"G5Q2\", \"G5Q3\", \"G5Q4\", \"G5Q5\",\n            \"G5Q6\", \"G5Q7\", \"G5Q8\", \"G5Q9\", \"G5Q10\",\n            \"G5Q11\", \"G5Q12\", \"G5Q13\", \"G5Q14\", \"G5Q15\", \"G5Q16\", \"G5Q17\"\n        ]\n      }\n    }\n  }\n}"
             },
-            "url": "{{host}}/assessment/v3/itemsets/create",
-            "description": ""
+            "url": "{{host}}/assessment/v3/itemsets/create"
           },
           "response": []
         },
@@ -296,8 +285,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": {\n    \"assessment_item_set\": {\n      \"objectType\": \"ItemSet\",\n      \"metadata\": {\n        \"title\": \"Testing ItemSet - MCQQ_650.\",\n        \"type\": \"materialised\",\n        \"description\": \"Testing of ItemSet Using AssessmentItems\",\n        \"code\": \"ItemSet_650\",\n        \"difficulty_level\": \"high\",\n        \"owner\": \"Ilimi\",\n        \"used_for\": \"assessment\",\n        \"max_score\": 3,\n        \"memberIds\": [\n            \"test.q901\", \"test.q902\", \"test.q903\"\n        ]\n      }\n    }\n  }\n}"
             },
-            "url": "{{host}}/assessment/v3/itemsets/update/do_456789",
-            "description": ""
+            "url": "{{host}}/assessment/v3/itemsets/update/do_456789"
           },
           "response": []
         },
@@ -327,10 +315,9 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"request\": {\n    \"assessment_item\": {\n      \"identifier\": \"test.q901.a\",\n      \"objectType\": \"AssessmentItem\",\n      \"metadata\": {\n        \"code\": \"test.q901\",\n        \"name\": \"MCQ Question 2\",\n        \"type\": \"mcq\",\n        \"num_answers\": 1,\n        \"template\": \"mcq_template_2\",\n        \"qlevel\": \"MEDIUM\",\n        \"owner\": \"username_1\",\n        \"title\": \"ˆ š¿¤Í°¦ µ¿¸Í¤À°Í£µ¨Í¨Á ¹¾—Â ¸Á¤Í¤³¤Æ¯¨Í¨Á ²Æ•Í• ®¾¡¿.  ¸Â•Í¤ ‰¤Í¤°µ¨Í¨Á †°¿¸¿°¿.\",\n        \"question\": \"µ¿¸Í¤À°Í£ = ___________ š¦° ¸Æ‚.®À.             \\n¸Á¤Í¤³¤Æ= __________ š¦° ¸Æ‚.®À.\",\n        \"model\": {\n          \"img\": {\n            \"type\": \"image\",\n            \"asset\": \"perimeter\"\n          },\n          \"img2\": {\n            \"type\": \"image\",\n            \"asset\": \"smallSquare\"\n          },\n          \"subtext\": \"(          = 1  š¦° ¸Æ‚.®À)\"\n        },\n        \"options\": [\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&10\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"14&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"16&8\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            },\n            \"score\": 1\n          }\n        ],\n        \"max_score\": 1,\n        \"partial_scoring\": false,\n        \"feedback\": \"\"\n      },\n      \"outRelations\": [\n        {\n          \"endNodeId\": \"Num:C1:SC1\",\n          \"relationType\": \"associatedTo\"\n        }\n      ]\n    }\n  }\n}"
+              "raw": "{\n  \"request\": {\n    \"assessment_item\": {\n      \"identifier\": \"test.q901.a\",\n      \"objectType\": \"AssessmentItem\",\n      \"metadata\": {\n        \"code\": \"test.q901\",\n        \"name\": \"MCQ Question 2\",\n        \"type\": \"mcq\",\n        \"num_answers\": 1,\n        \"template\": \"mcq_template_2\",\n        \"qlevel\": \"MEDIUM\",\n        \"owner\": \"username_1\",\n        \"title\": \"\u0c88 \u0c9a\u0cbf\u0ca4\u0ccd\u0cb0\u0ca6 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0cbe\u0c97\u0cc2 \u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0cb3\u0ca4\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb2\u0cc6\u0c95\u0ccd\u0c95 \u0cae\u0cbe\u0ca1\u0cbf.  \u0cb8\u0cc2\u0c95\u0ccd\u0ca4 \u0c89\u0ca4\u0ccd\u0ca4\u0cb0\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0cb0\u0cbf\u0cb8\u0cbf\u0cb0\u0cbf.\",\n        \"question\": \"\u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3 = ___________ \u0c9a\u0ca6\u0cb0 \u0cb8\u0cc6\u0c82.\u0cae\u0cc0.             \\n\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0cb3\u0ca4\u0cc6= __________ \u0c9a\u0ca6\u0cb0 \u0cb8\u0cc6\u0c82.\u0cae\u0cc0.\",\n        \"model\": {\n          \"img\": {\n            \"type\": \"image\",\n            \"asset\": \"perimeter\"\n          },\n          \"img2\": {\n            \"type\": \"image\",\n            \"asset\": \"smallSquare\"\n          },\n          \"subtext\": \"(          = 1  \u0c9a\u0ca6\u0cb0 \u0cb8\u0cc6\u0c82.\u0cae\u0cc0)\"\n        },\n        \"options\": [\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&10\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"14&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"16&8\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            },\n            \"score\": 1\n          }\n        ],\n        \"max_score\": 1,\n        \"partial_scoring\": false,\n        \"feedback\": \"\"\n      },\n      \"outRelations\": [\n        {\n          \"endNodeId\": \"Num:C1:SC1\",\n          \"relationType\": \"associatedTo\"\n        }\n      ]\n    }\n  }\n}"
             },
-            "url": "{{host}}/assessment/v3/itemsets/read/do_7896456",
-            "description": ""
+            "url": "{{host}}/assessment/v3/itemsets/read/do_7896456"
           },
           "response": []
         },
@@ -357,8 +344,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": {\n    \"metadata\": {\n        \"filters\": [\n            {\"property\" : \"total_items\", \"operator\": \">=\", \"value\": 17}\n        ],\n        \"op\": \"AND\"\n    }\n  }\n}"
             },
-            "url": "{{host}}/assessment/v3/itemsets/search",
-            "description": ""
+            "url": "{{host}}/assessment/v3/itemsets/search"
           },
           "response": []
         },
@@ -383,10 +369,9 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"request\": {\n    \"assessment_item\": {\n      \"identifier\": \"test.q901.a\",\n      \"objectType\": \"AssessmentItem\",\n      \"metadata\": {\n        \"code\": \"test.q901\",\n        \"name\": \"MCQ Question 2\",\n        \"type\": \"mcq\",\n        \"num_answers\": 1,\n        \"template\": \"mcq_template_2\",\n        \"qlevel\": \"MEDIUM\",\n        \"owner\": \"username_1\",\n        \"title\": \"ˆ š¿¤Í°¦ µ¿¸Í¤À°Í£µ¨Í¨Á ¹¾—Â ¸Á¤Í¤³¤Æ¯¨Í¨Á ²Æ•Í• ®¾¡¿.  ¸Â•Í¤ ‰¤Í¤°µ¨Í¨Á †°¿¸¿°¿.\",\n        \"question\": \"µ¿¸Í¤À°Í£ = ___________ š¦° ¸Æ‚.®À.             \\n¸Á¤Í¤³¤Æ= __________ š¦° ¸Æ‚.®À.\",\n        \"model\": {\n          \"img\": {\n            \"type\": \"image\",\n            \"asset\": \"perimeter\"\n          },\n          \"img2\": {\n            \"type\": \"image\",\n            \"asset\": \"smallSquare\"\n          },\n          \"subtext\": \"(          = 1  š¦° ¸Æ‚.®À)\"\n        },\n        \"options\": [\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&10\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"14&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"16&8\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            },\n            \"score\": 1\n          }\n        ],\n        \"max_score\": 1,\n        \"partial_scoring\": false,\n        \"feedback\": \"\"\n      },\n      \"outRelations\": [\n        {\n          \"endNodeId\": \"Num:C1:SC1\",\n          \"relationType\": \"associatedTo\"\n        }\n      ]\n    }\n  }\n}"
+              "raw": "{\n  \"request\": {\n    \"assessment_item\": {\n      \"identifier\": \"test.q901.a\",\n      \"objectType\": \"AssessmentItem\",\n      \"metadata\": {\n        \"code\": \"test.q901\",\n        \"name\": \"MCQ Question 2\",\n        \"type\": \"mcq\",\n        \"num_answers\": 1,\n        \"template\": \"mcq_template_2\",\n        \"qlevel\": \"MEDIUM\",\n        \"owner\": \"username_1\",\n        \"title\": \"\u0c88 \u0c9a\u0cbf\u0ca4\u0ccd\u0cb0\u0ca6 \u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb9\u0cbe\u0c97\u0cc2 \u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0cb3\u0ca4\u0cc6\u0caf\u0ca8\u0ccd\u0ca8\u0cc1 \u0cb2\u0cc6\u0c95\u0ccd\u0c95 \u0cae\u0cbe\u0ca1\u0cbf.  \u0cb8\u0cc2\u0c95\u0ccd\u0ca4 \u0c89\u0ca4\u0ccd\u0ca4\u0cb0\u0cb5\u0ca8\u0ccd\u0ca8\u0cc1 \u0c86\u0cb0\u0cbf\u0cb8\u0cbf\u0cb0\u0cbf.\",\n        \"question\": \"\u0cb5\u0cbf\u0cb8\u0ccd\u0ca4\u0cc0\u0cb0\u0ccd\u0ca3 = ___________ \u0c9a\u0ca6\u0cb0 \u0cb8\u0cc6\u0c82.\u0cae\u0cc0.             \\n\u0cb8\u0cc1\u0ca4\u0ccd\u0ca4\u0cb3\u0ca4\u0cc6= __________ \u0c9a\u0ca6\u0cb0 \u0cb8\u0cc6\u0c82.\u0cae\u0cc0.\",\n        \"model\": {\n          \"img\": {\n            \"type\": \"image\",\n            \"asset\": \"perimeter\"\n          },\n          \"img2\": {\n            \"type\": \"image\",\n            \"asset\": \"smallSquare\"\n          },\n          \"subtext\": \"(          = 1  \u0c9a\u0ca6\u0cb0 \u0cb8\u0cc6\u0c82.\u0cae\u0cc0)\"\n        },\n        \"options\": [\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&10\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"14&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"16&8\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            }\n          },\n          {\n            \"value\": {\n              \"type\": \"text\",\n              \"asset\": \"12&7\",\n              \"font\": \"Verdana\",\n              \"color\": \"white\",\n              \"fontsize\": \"240\"\n            },\n            \"score\": 1\n          }\n        ],\n        \"max_score\": 1,\n        \"partial_scoring\": false,\n        \"feedback\": \"\"\n      },\n      \"outRelations\": [\n        {\n          \"endNodeId\": \"Num:C1:SC1\",\n          \"relationType\": \"associatedTo\"\n        }\n      ]\n    }\n  }\n}"
             },
-            "url": "{{host}}/assessment/v3/itemsets/generate",
-            "description": ""
+            "url": "{{host}}/assessment/v3/itemsets/generate"
           },
           "response": []
         },
@@ -413,8 +398,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "{{host}}/assessment/v3/itemsets/retire/do_568798089",
-            "description": ""
+            "url": "{{host}}/assessment/v3/itemsets/retire/do_568798089"
           },
           "response": []
         },
@@ -441,8 +425,7 @@
               "mode": "raw",
               "raw": "{\n    \"request\": {\n        \n    }\n}"
             },
-            "url": "{{host}}/assessment/v3/itemsets/list",
-            "description": ""
+            "url": "{{host}}/assessment/v3/itemsets/list"
           },
           "response": []
         }
@@ -476,8 +459,7 @@
               "mode": "raw",
               "raw": "{\n    \"request\": {\n        \n    }\n}"
             },
-            "url": "{{host}}/meta/v3/resourcebundles/list",
-            "description": ""
+            "url": "{{host}}/meta/v3/resourcebundles/list"
           },
           "response": []
         },
@@ -504,8 +486,7 @@
               "mode": "raw",
               "raw": "{\n    \"request\": {\n        \n    }\n}"
             },
-            "url": "{{host}}/meta/v3/resourcebundles/read/en",
-            "description": ""
+            "url": "{{host}}/meta/v3/resourcebundles/read/en"
           },
           "response": []
         },
@@ -532,8 +513,7 @@
               "mode": "raw",
               "raw": "{\n    \"request\": {\n        \n    }\n}"
             },
-            "url": "{{host}}/meta/v3/ordinals/list",
-            "description": ""
+            "url": "{{host}}/meta/v3/ordinals/list"
           },
           "response": []
         },
@@ -562,8 +542,7 @@
                 }
               ]
             },
-            "url": "{{host}}/terms/v3/list",
-            "description": ""
+            "url": "{{host}}/terms/v3/list"
           },
           "response": []
         },
@@ -596,8 +575,7 @@
                 }
               ]
             },
-            "url": "{{host}}/meta/v3/definitions/list",
-            "description": ""
+            "url": "{{host}}/meta/v3/definitions/list"
           },
           "response": []
         }
@@ -631,8 +609,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": { \n      \"search\": {\n        \"sort\": [\"contentType\"],\n        \"order\": \"asc\",\n        \"status\":\"Live\"\n      }\n  }\n}"
             },
-            "url": "{{host}}/content/v3/list",
-            "description": ""
+            "url": "{{host}}/content/v3/list"
           },
           "response": []
         },
@@ -666,7 +643,7 @@
               ]
             },
             "url": {
-              "raw": "{{host}}/content/v3/read/do_212344942347632640143?fields=domain",
+              "raw": "{{host}}/content/v3/read/do_112513928772542464121?fields=domain",
               "host": [
                 "{{host}}"
               ],
@@ -674,17 +651,15 @@
                 "content",
                 "v3",
                 "read",
-                "do_212344942347632640143"
+                "do_112513928772542464121"
               ],
               "query": [
                 {
                   "key": "fields",
-                  "value": "domain",
-                  "equals": true
+                  "value": "domain"
                 }
               ]
-            },
-            "description": ""
+            }
           },
           "response": []
         },
@@ -711,8 +686,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": {\n    \"content\": {\n      \"code\": \"do_21233654011378073616\",\n      \"description\": \"Test Content\",\n      \"language\": [\n        \"English\"\n      ],\n      \"mimeType\": \"application/vnd.ekstep.ecml-archive\",\n      \"visibility\": \"Default\",\n      \"mediaType\": \"content\",\n      \"osId\": \"org.ekstep.quiz.app\",\n      \"domain\": [\n        \"literacy\"\n      ],\n      \"name\": \"testContent\"\n    }  \n  }\n}"
             },
-            "url": "{{host}}/content/v3/create",
-            "description": ""
+            "url": "{{host}}/content/v3/create"
           },
           "response": []
         },
@@ -739,8 +713,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": { \n      \"search\": {\n          \"identifier\": [\"next\", \"previous\", \"icon_hint\", \"speech_bubble\", \"image5\", \"domain_5230\", \"image7\", \n          \"domain_5239\", \"image9\", \"image10\", \"image11\", \"domain_5236\", \"image13\", \"domain_5237\", \"image15\", \"image16\", \n          \"domain_5238\"],\n          \"fields\": [\"name\", \"downloadUrl\", \"code\", \"mediaType\"],\n          \"limit\": 100\n      }\n  }\n}"
             },
-            "url": "{{host}}/content/v3/search",
-            "description": ""
+            "url": "{{host}}/content/v3/search"
           },
           "response": []
         },
@@ -767,8 +740,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": {\n    \"content\": {\n     \n       \"versionKey\": \"1492770715596\",\n       \"code\":\"testImage\"\n    }\n  }\n}"
             },
-            "url": "{{host}}/content/v3/update/do_11222877668517478412",
-            "description": ""
+            "url": "{{host}}/content/v3/update/do_11222877668517478412"
           },
           "response": []
         },
@@ -797,8 +769,7 @@
                 }
               ]
             },
-            "url": "{{host}}/content/v3/upload/org.ekstep.esl1",
-            "description": ""
+            "url": "{{host}}/content/v3/upload/org.ekstep.esl1"
           },
           "response": []
         },
@@ -825,8 +796,7 @@
               "mode": "raw",
               "raw": "{\n\t\"request\": {\n\t\t\"content\" : {\n\t\t\t\"lastPublishedBy\" : \"Ekstep\"\n\t\t}\n\t}\n}"
             },
-            "url": "{{host}}/content/v3/publish/org.ekstep.march1211332.story",
-            "description": ""
+            "url": "{{host}}/content/v3/publish/org.ekstep.march1211332.story"
           },
           "response": []
         },
@@ -853,8 +823,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": {\n    \"content_identifiers\": [\"org.ekstep.english.stories\",\"org.ekstep.num.build.sentence\",\"org.ekstep.englishsecondlanguage\"],\n    \"file_name\": \"esl_dev_bundle\"\n  }\n}"
             },
-            "url": "{{host}}/content/v3//bundle",
-            "description": ""
+            "url": "{{host}}/content/v3//bundle"
           },
           "response": []
         },
@@ -870,8 +839,7 @@
               }
             ],
             "body": {},
-            "url": "{{host}}/content/v3/hierarchy/org.ekstep.num.build.sentence",
-            "description": ""
+            "url": "{{host}}/content/v3/hierarchy/org.ekstep.num.build.sentence"
           },
           "response": []
         },
@@ -898,8 +866,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "{{host}}/content/v3/retire/do_2122308014473707521145",
-            "description": ""
+            "url": "{{host}}/content/v3/retire/do_2122308014473707521145"
           },
           "response": []
         },
@@ -926,8 +893,7 @@
               "mode": "raw",
               "raw": "{\n\t\"request\": {\n\t\t\"content\" : {\n\t\t\n\t\t}\n\t}\n}"
             },
-            "url": "{{host}}/content/v3/review/org.ekstep.march1211332.story",
-            "description": ""
+            "url": "{{host}}/content/v3/review/org.ekstep.march1211332.story"
           },
           "response": []
         },
@@ -954,8 +920,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": { \n      \"search\": {\n          \"identifier\": [\"next\", \"previous\", \"icon_hint\", \"speech_bubble\", \"image5\", \"domain_5230\", \"image7\", \n          \"domain_5239\", \"image9\", \"image10\", \"image11\", \"domain_5236\", \"image13\", \"domain_5237\", \"image15\", \"image16\", \n          \"domain_5238\"],\n          \"fields\": [\"name\", \"downloadUrl\", \"code\", \"mediaType\"],\n          \"limit\": 100\n      }\n  }\n}"
             },
-            "url": "{{host}}/content/v3/adv/search",
-            "description": ""
+            "url": "{{host}}/content/v3/adv/search"
           },
           "response": []
         },
@@ -982,8 +947,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": {\n  \t\t\"flagReasons\":[\"Copyright Violation\"],\n  \t\t\"flaggedBy\":\"rayulu\",\n    \t\"versionKey\": \"1480076527423\"\n  }\n}"
             },
-            "url": "{{host}}/content/v3/flag/do_1234567",
-            "description": ""
+            "url": "{{host}}/content/v3/flag/do_1234567"
           },
           "response": []
         },
@@ -1017,8 +981,7 @@
                   "value": "2016-05-26T13:00:00"
                 }
               ]
-            },
-            "description": ""
+            }
           },
           "response": []
         }
@@ -1054,8 +1017,7 @@
                 }
               ]
             },
-            "url": "{{host}}/domain/v3/list",
-            "description": ""
+            "url": "{{host}}/domain/v3/list"
           },
           "response": [
             {
@@ -1190,8 +1152,7 @@
               }
             ],
             "body": {},
-            "url": "{{host}}/domain/v3/numeracy/read",
-            "description": ""
+            "url": "{{host}}/domain/v3/numeracy/read"
           },
           "response": []
         }
@@ -1231,8 +1192,7 @@
                 }
               ]
             },
-            "url": "{{host}}/domain/v3/numeracy/concepts/list",
-            "description": ""
+            "url": "{{host}}/domain/v3/numeracy/concepts/list"
           },
           "response": []
         },
@@ -1265,8 +1225,7 @@
                 }
               ]
             },
-            "url": "{{host}}/domain/v3/numeracy/concepts/read/Num:C3:SC2",
-            "description": ""
+            "url": "{{host}}/domain/v3/numeracy/concepts/read/Num:C3:SC2"
           },
           "response": []
         },
@@ -1293,8 +1252,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": {\n    \"object\": {\n        \"identifier\": \"test_dimension_19\",\n        \"name\": \"Test Dimension 1\",\n        \"code\": \"test_dimension_1\",\n        \"parent\": [\n        ]\n    }\n  }\n}"
             },
-            "url": "{{host}}/domain/v3/numeracy/dimensions/create",
-            "description": ""
+            "url": "{{host}}/domain/v3/numeracy/dimensions/create"
           },
           "response": []
         },
@@ -1321,8 +1279,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": {\n    \"object\": {\n        \"tags\": [\"Class 4\"]\n        \n    }\n  }\n}"
             },
-            "url": "{{host}}/domain/v3/numeracy/concepts/update/Num:C3:SC7:MC5",
-            "description": ""
+            "url": "{{host}}/domain/v3/numeracy/concepts/update/Num:C3:SC7:MC5"
           },
           "response": []
         },
@@ -1373,8 +1330,7 @@
                   "equals": true
                 }
               ]
-            },
-            "description": ""
+            }
           },
           "response": []
         },
@@ -1401,8 +1357,7 @@
               "mode": "raw",
               "raw": "{\n  \"request\": {\n   \n      \n    \n  }\n}"
             },
-            "url": "{{host}}/domain/v3/numeracy/concepts/retire/Num:C3:SC2",
-            "description": ""
+            "url": "{{host}}/domain/v3/numeracy/concepts/retire/Num:C3:SC2"
           },
           "response": []
         }
