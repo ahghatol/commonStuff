@@ -1,7 +1,7 @@
 {
   "info": {
-    "name": "25 Sept: Composite Search API - V3",
     "_postman_id": "16a92a29-59da-4345-de5e-52e5799385f8",
+    "name": "25 Sept: Composite Search API - V3",
     "description": "Composite Search APIs",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
@@ -37,7 +37,7 @@
           "mode": "raw",
           "raw": "{\r\n    \"request\": {\r\n        \"filters\":{\r\n           \"objectType\": [\"Content\"],\r\n            \"collaborator\" :[]\r\n        }\r\n    }\r\n}"
         },
-        "url": "{{host}}/composite/v3/search",
+        "url": "{{host}}/search/v3/search",
         "description": "{{host}}/v2/search"
       },
       "response": []
@@ -107,7 +107,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"request\": {\r\n    \"filters\": {\r\n      \"lemma\": {\"startsWith\": \"\", \"endsWith\": \"$\", \"value\": \"\"}\r\n    }\r\n  }\r\n}"
+          "raw": "{\r\n  \"request\": {\r\n    \"filters\": {\r\n      \"lemma\": {\"startsWith\": \"\u0905\", \"endsWith\": \"\u0924\", \"value\": \"\u0915\"}\r\n    }\r\n  }\r\n}"
         },
         "url": "{{host}}/composite/v3/search",
         "description": "{{host}}/v2/search"
@@ -143,7 +143,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"request\": {\r\n        \"filters\":{\r\n            \"lemma\":\"\"\r\n        }\r\n    }\r\n}"
+          "raw": "{\r\n    \"request\": {\r\n        \"filters\":{\r\n            \"lemma\":\"\u0905\u091c\"\r\n        }\r\n    }\r\n}"
         },
         "url": "{{host}}/composite/v3/search",
         "description": "{{host}}/v2/search"
@@ -179,7 +179,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"request\": {\r\n        \"filters\":{\r\n            \"objectType\": [\"Word\"],\r\n           \"lemma\":[\"0\", \"\", \"0M>\"]\r\n        }\r\n    }\r\n}"
+          "raw": "{\r\n    \"request\": {\r\n        \"filters\":{\r\n            \"objectType\": [\"Word\"],\r\n           \"lemma\":[\"\u0915\u0930\", \"\u0905\u091c\", \"\u091a\u0930\u094d\u091a\u093e\"]\r\n        }\r\n    }\r\n}"
         },
         "url": "{{host}}/composite/v3/search",
         "description": "{{host}}/v2/search"
