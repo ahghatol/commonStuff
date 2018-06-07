@@ -984,6 +984,43 @@
             }
           },
           "response": []
+        },
+        {
+          "_postman_id": "026ae28b-ec28-4b20-bf03-c7055899f09c",
+          "name": "Get content",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{jwtToken}}"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "https://api-qa.ekstep.in/content/v3/hierarchy/do_2125202571328389121305?fields=versionKey",
+              "protocol": "https",
+              "host": [
+                "api-qa",
+                "ekstep",
+                "in"
+              ],
+              "path": [
+                "content",
+                "v3",
+                "hierarchy",
+                "do_2125202571328389121305"
+              ],
+              "query": [
+                {
+                  "key": "fields",
+                  "value": "versionKey",
+                  "equals": true
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ]
     },
