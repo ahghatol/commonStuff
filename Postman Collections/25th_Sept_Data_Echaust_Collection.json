@@ -1,9 +1,7 @@
 {
-  "variables": [],
   "info": {
-    "name": "25th Sept Data Echaust Collection",
     "_postman_id": "66083ddc-d89a-3f30-8237-0f04af8b73db",
-    "description": "",
+    "name": "25th Sept Data Echaust Collection",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
@@ -131,6 +129,54 @@
         },
         "url": "{{host}}/data/v2/dataset/request/submit",
         "description": "Data Exhaust - Request API"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "81fa007f-b57a-4802-a822-feedc7516a0b",
+      "name": "https://dev.ekstep.in/api/data/v3/dataset/get/raw?from=2018-06-02",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIxOGM5MmQ2YzIyNmQ0MDc0Yjc3MzFhMGJlMTE4YzJhMyJ9.XNXNmEM92u29Zir_VzxQ1QsWKxbHA-BNirXeaWZMBxg"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          },
+          {
+            "key": "postman-token",
+            "value": "f7d6ebe9-2b5a-d128-f124-c20547d56db9"
+          },
+          {
+            "key": "x-channel-id",
+            "value": "in.ekstep"
+          }
+        ],
+        "body": {},
+        "url": {
+          "raw": "{{host}}/data/v3/dataset/get/raw?from=2018-06-02",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "data",
+            "v3",
+            "dataset",
+            "get",
+            "raw"
+          ],
+          "query": [
+            {
+              "key": "from",
+              "value": "2018-06-02",
+              "equals": true
+            }
+          ]
+        },
+        "description": "Generated from a curl request: \ncurl -X GET \\\n  'https://dev.ekstep.in/api/data/v3/dataset/get/raw?from=2018-06-02' \\\n  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIxOGM5MmQ2YzIyNmQ0MDc0Yjc3MzFhMGJlMTE4YzJhMyJ9.XNXNmEM92u29Zir_VzxQ1QsWKxbHA-BNirXeaWZMBxg' \\\n  -H 'cache-control: no-cache' \\\n  -H 'postman-token: f7d6ebe9-2b5a-d128-f124-c20547d56db9' \\\n  -H 'x-channel-id: in.ekstep'"
       },
       "response": []
     }
