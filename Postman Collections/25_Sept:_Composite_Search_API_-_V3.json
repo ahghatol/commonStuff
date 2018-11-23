@@ -35,7 +35,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"err_code\": \"\",\n  \"err_message\": \"\",\n  \"data\": {\n    \"result\": [\n    ]\n  }\n}\n"
+          "raw": "{\n  \"err_code\": \"\",\n  \"err_message\": \"\",\n  \"data\": {\n    \"result\": {\n    \t\"id\": \"\",\n    \t\"asset_id\":\"\",\n    \t\"ordering\":\"\",\n    \t\"title\":\"\",\n    \t\"alias\":\"\",\n    \t\"state\":\"\",\n    \t\"type_description\":\"\",\n    \t\"unique_identifier\":\"\",\n    \t\"parent_id\":\"\",\n    \t\"params\":\"\",\n    \t\"checked_out\":\"\",\n    \t\"checked_out_time\":\"\",\n    \t\"created_by\":\"\",\n    \t\"created_date\":\"\",\n    \t\"modified_by\":\"\",\n    \t\"modified_date\":\"\",\n    \t\"modified_date\":\"\",\n    \t\n    }\n  }\n}\n"
         },
         "url": "{{host}}/search/v3/search",
         "description": "{{host}}/v2/search"
