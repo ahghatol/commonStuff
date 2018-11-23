@@ -35,7 +35,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"request\": {\r\n        \"filters\":{\r\n           \"objectType\": [\"Content\"],\r\n            \"collaborator\" :[]\r\n        }\r\n    }\r\n}"
+          "raw": "{\n  \"err_code\": \"\",\n  \"err_message\": \"\",\n  \"data\": {\n    \"result\": [\n    ]\n  }\n}\n"
         },
         "url": "{{host}}/search/v3/search",
         "description": "{{host}}/v2/search"
